@@ -1,0 +1,10 @@
+.bar-chart-container {
+  display: flex;
+  justify-content: center;
+  
+  & .bar-chart {
+    max-width: 1500px;
+    min-width: 0px;
+    flex: 1;
+  }
+}

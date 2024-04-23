@@ -1,9 +1,11 @@
 import { useState } from "react";
 import { AgChartsReact } from "ag-charts-react";
 
+import './BarChart.css'
+
 export default function BarChart() {
   const [chartOptions, setChartOptions] = useState({
-    height: 800,
+    height: 700,
     data: [
       { skill: 'JavaScript', years: 2 },
       { skill: 'CSS', years: 2 },
@@ -58,8 +60,10 @@ export default function BarChart() {
   })
 
   return (
-    <div className="bar-chart">
-      <AgChartsReact options={chartOptions} />
+    <div className="bar-chart-container">
+      <div className="bar-chart">
+        <AgChartsReact options={chartOptions} />
+      </div>
     </div>
   )
 }
