@@ -1,0 +1,48 @@
+Footer {
+  align-items: center;
+  background: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  
+  justify-self: flex-end;
+
+  & .row {
+    margin: 5px;
+     
+    & a {
+      font-size: 14px;
+      margin: 0px 5px;
+
+      &:hover {
+        color: rgb(121, 121, 250);
+        cursor: pointer;
+      }
+    }
+  }
+  & .totop {
+    margin: 5px;
+
+    a {
+      font-size: 12px;
+
+      &:hover {
+        color: rgb(121, 121, 250);
+        cursor: pointer;
+      }
+    }
+  }
+  & .separator {
+    border-bottom: 2px solid;
+    border-image: linear-gradient(to right, rgb(0, 0, 0), rgb(163, 163, 163), rgb(0, 0, 0)) 1;
+    display: flex;
+    width: 100%;
+  }
+  & p {
+    align-items: center;
+    display: flex;
+    font-size: 14px;
+    justify-content: center;
+    text-align: center;
+  }
+}

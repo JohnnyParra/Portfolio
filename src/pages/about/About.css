@@ -1,0 +1,15 @@
+.about {
+  display: flex;
+  flex-direction: column; 
+  height: 100vh;
+  
+  & .image {
+  width: 300px;
+  max-height: 400;
+  margin: 20px;
+  }
+  & .top-container {
+    display: flex;
+    margin: 20px;
+  }
+}

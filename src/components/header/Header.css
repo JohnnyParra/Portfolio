@@ -1,0 +1,115 @@
+header {
+  align-items: center;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  
+  & .logo {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    margin: 10px 0px 10px 0px;
+    height: 90px;
+    width: 90px;
+    cursor: pointer;
+  }
+  & .menu {
+    display: flex;
+    flex-grow: 2;
+    justify-content: center;
+    
+    & a {
+      align-items: center;
+      display: flex;
+      height: 40px;
+      margin: 0px 25px 0px 25px;
+      
+      &:hover {
+        color: rgb(121, 121, 250);
+        cursor: pointer;
+      }
+    }
+  }
+  & .dropdown {
+    display: none;
+
+    & .content {
+
+      & a {
+
+        &:hover {
+          color: rgb(121, 121, 250);
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  & .social {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    
+    & a {
+      margin: 5px 10px 5px 10px;
+
+      & .linkedin {
+
+        &:hover {
+          filter: invert(51%) sepia(35%) saturate(922%) hue-rotate(202deg) brightness(94%) contrast(109%);
+        }
+      }
+      & .github {
+
+        &:hover {
+          filter: invert(51%) sepia(35%) saturate(922%) hue-rotate(202deg) brightness(94%) contrast(109%);
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    flex-direction: column;
+
+    & .logo {
+      height: 70px;
+      width: 70px;
+      margin: 5px;
+      position: absolute;
+      z-index: 10;
+      left: 0;
+      top: 0;
+    }
+    & .menu {
+      display: none;
+    }
+    & .dropdown {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      background: black;
+      color: white;
+      align-items: center;
+
+      & .btn:hover {
+        filter: invert(51%) sepia(35%) saturate(922%) hue-rotate(202deg) brightness(94%) contrast(109%);
+      }
+      & .icon{
+        color: white;
+      }
+      & .content { 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        & a {
+          margin: 8px 0px 8px 0px;
+        }
+      }
+    }
+  }
+}
