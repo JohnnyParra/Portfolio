@@ -24,7 +24,7 @@ export default function Home() {
 
   const latestWorkElements = latestWorkData.map((project) => {
     return (
-      <div className="container">
+      <div key={nanoid()} className="container">
         <LatestWork
           key={nanoid()}
           imgLocation={project.imgLocation}

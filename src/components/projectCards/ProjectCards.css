@@ -1,0 +1,43 @@
+.latest-work-container {
+  align-items: center;
+  border-radius: 5px;
+  border: 1px solid black;
+  box-shadow: 1px 1px 3px rgb(58, 58, 58);
+  display: flex;
+  flex-direction: column;
+  min-height: 500px;
+  margin: 5px;
+  padding: 5px;
+  width: 500px;
+  background: linear-gradient( white, silver, white, white);
+
+  & .title {
+      font-family: animeace !important;
+      font-weight: 600;
+  }
+  & img {
+      border: 1px solid black;
+      border-radius: 5px;
+      box-shadow: 1px 1px 2px rgb(58, 58, 58);
+      margin: 5px 0px 5px 0px;
+      max-height: 300px;
+      width: 100%;
+  }
+  & .skills {
+      padding: 5px 0px 5px 0px;
+      width: 100%;
+  }
+  & .description {
+      width: 100%;
+  }
+  & .learn-more {
+      color: blue;
+      cursor: pointer;
+      align-content: flex-end;
+      text-align: right;
+      flex-grow: 1;
+      font-size: 13px;
+      padding: 5px 20px 5px 0px;
+      width: 100%;
+  }
+}
