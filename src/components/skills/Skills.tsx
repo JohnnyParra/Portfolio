@@ -23,7 +23,11 @@ export default function Skills(props: SkillsTypes) {
 			<div className='skills-title'>Skills:</div>
       <div className='skills-list'>
         {skillsElements}
-        <button className="show-more-btn" onClick={() => setShowMore(!showMore)}>{!showMore ? "+" : "-"}</button>
+        <button 
+          className="show-more-btn" 
+          title={!showMore ? "Expand" : "Show Less"} 
+          onClick={() => setShowMore(!showMore)}>{!showMore ? "+" : "-"}
+        </button>
       </div>
     </div>
   );

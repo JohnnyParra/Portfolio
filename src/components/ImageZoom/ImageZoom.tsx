@@ -68,6 +68,7 @@ export default function ImageZoom(props: propTypes) {
   return (
     <div
       className="image-zoom-container"
+      title={isZoom ? "" : "Click To Zoom In"}
       ref={containerRef}
       onMouseMove={(event: MouseEvent) => handleMouseMove(event)}
     >
