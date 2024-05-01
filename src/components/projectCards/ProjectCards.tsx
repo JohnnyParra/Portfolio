@@ -20,7 +20,7 @@ export default function ProjectCards(props: ProjectCardTypes) {
   return (
     <div className="latest-work-container">
       <div className="title">{props.title}</div>
-      <ImageZoom image={props.imgLocation} />
+      <ImageZoom image={props.imgLocation} scale={2.5} />
       <div className="skills">
         <Skills skills={props.skills} />
       </div>

@@ -9,7 +9,7 @@ import './Portfolio.css';
 
 export default function Portfolio() {
 
-  const projectCardElements = latestWorkData.map((project) => {
+  const projectCardElements: JSX.Element[] = latestWorkData.map((project) => {
     return (
       <div key={nanoid()} className="container">
         <ProjectCards

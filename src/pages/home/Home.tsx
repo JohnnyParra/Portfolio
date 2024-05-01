@@ -22,7 +22,7 @@ export default function Home() {
 
   // console.log(data);
 
-  const latestWorkElements = latestWorkData.map((project) => {
+  const latestWorkElements: JSX.Element[] = latestWorkData.map((project) => {
     return (
       <div key={nanoid()} className="container">
         <LatestWork

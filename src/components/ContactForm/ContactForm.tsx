@@ -11,10 +11,17 @@ interface FormData {
   message: string;
 }
 
+interface alertInfo {
+  display: boolean;
+  message: string;
+  type: string;
+}
+
+
 export default function ContactForm() {
   const { register, handleSubmit, reset, formState: { errors }} = useForm<FormData>();
-  const [disabled, setDisabled] = useState(false);
-  const [alertInfo, setAlertInfo] = useState({
+  const [disabled, setDisabled] = useState<boolean>(false);
+  const [alertInfo, setAlertInfo] = useState<alertInfo>({
     display: false,
     message: "",
     type: "",

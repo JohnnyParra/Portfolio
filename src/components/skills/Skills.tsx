@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { ReactElement, useState } from 'react';
 import { nanoid } from "nanoid";
 
 import "./Skills.css";
@@ -8,9 +8,9 @@ type SkillsTypes = {
 };
 
 export default function Skills(props: SkillsTypes) {
-  const [showMore, setShowMore] = useState(false);
+  const [showMore, setShowMore] = useState<boolean>(false);
 
-  const skillsElements = props.skills.map((skill, i) => {
+  const skillsElements: (JSX.Element | undefined)[] = props.skills.map((skill, i) => {
     if (!showMore && i < 3) {
       return <div key={nanoid()} className='skill'>{skill}</div>;
     } else if (showMore) {
