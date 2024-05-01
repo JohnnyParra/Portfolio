@@ -1,6 +1,6 @@
 import Skills from "../skills/Skills";
 import { useNavigate } from "react-router-dom";
-
+import ImageZoom from "../ImageZoom/ImageZoom";
 import "./LatestWork.css";
 
 type LatestWorkTypes = {
@@ -18,7 +18,7 @@ export default function LatestWork(props: LatestWorkTypes) {
   return (
     <div className="latest-work-container">
       <div className="title">{props.title}</div>
-      <img src={props.imgLocation} />
+      <ImageZoom image={props.imgLocation} scale={2.5} />
       <div className="skills">
         <Skills skills={props.skills} />
       </div>

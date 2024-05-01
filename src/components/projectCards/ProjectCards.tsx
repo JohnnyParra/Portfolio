@@ -1,6 +1,8 @@
 import Skills from "../skills/Skills";
 import { useNavigate } from "react-router-dom";
 
+import ImageZoom from "../ImageZoom/ImageZoom";
+
 import "./ProjectCards.css";
 
 type ProjectCardTypes = {
@@ -18,7 +20,7 @@ export default function ProjectCards(props: ProjectCardTypes) {
   return (
     <div className="latest-work-container">
       <div className="title">{props.title}</div>
-      <img src={props.imgLocation} />
+      <ImageZoom image={props.imgLocation} />
       <div className="skills">
         <Skills skills={props.skills} />
       </div>
