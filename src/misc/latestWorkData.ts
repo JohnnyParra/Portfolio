@@ -1,12 +1,19 @@
-import blogPNG from '../assets/Blog.png';
-import jeopardyPNG from '../assets/Jeopardy.png';
-import PaintPNG from '../assets/Paint.png';
-import QuizzicalPNG from '../assets/Quizzical.png';
-import DiscordPNG from '../assets/Discord-bot.png';
-import TaskPNG from '../assets/Task-Manager.png';
+import blogPNG from '/Blog.png';
+import blogLQIP from '/Blog(LQIP).webp';
+import jeopardyPNG from '/Jeopardy.png';
+import JeopardyLQIP from '/Jeopardy(LQIP).webp';
+import PaintPNG from '/Paint.png';
+import PaintLQIP from '/Paint(LQIP).webp';
+import QuizzicalPNG from '/Quizzical.png';
+import QuizzicalLQIP from '/Quizzical(LQIP).webp';
+import DiscordPNG from '/Discord-bot.png';
+import DiscordLQIP from '/Disrocd-bot(LQIP).webp';
+import TaskPNG from '/Task-Manager.png';
+import TaskLQIP from '/Task-Manager(LQIP).webp';
 
 interface latestWorkData {
   imageLocation: string,
+  Placeholder: string,
   id: number,
   title: string,
   url: string,
@@ -17,6 +24,7 @@ interface latestWorkData {
 const latestWorkData = [
   {
     imgLocation: blogPNG,
+    Placeholder: blogLQIP,
     id: 0,
     title: "BLOG",
     url: "blog-application",
@@ -25,6 +33,7 @@ const latestWorkData = [
   },
   {
     imgLocation: jeopardyPNG,
+    Placeholder: JeopardyLQIP,
     id: 1,
     title: "JEOPARDY",
     url: "Jeopardy",
@@ -33,6 +42,7 @@ const latestWorkData = [
   },
   {
     imgLocation: PaintPNG,
+    Placeholder: PaintLQIP,
     id: 2,
     title: "PAINT APP",
     url: "Paint App",
@@ -41,6 +51,7 @@ const latestWorkData = [
   },
   {
     imgLocation: DiscordPNG,
+    Placeholder: DiscordLQIP,
     id: 3,
     title: "DISCORD BOT",
     url: "Discord Bot",
@@ -49,6 +60,7 @@ const latestWorkData = [
   },
   {
     imgLocation: TaskPNG,
+    Placeholder: TaskLQIP,
     id: 4,
     title: "TASK MANAGER",
     url: "Task Manager",
@@ -57,6 +69,7 @@ const latestWorkData = [
   },
   {
     imgLocation: PaintPNG,
+    Placeholder: PaintLQIP,
     id: 5,
     title: "STUDY BUDDY BACKEND",
     url: "Study Buddy",
@@ -65,6 +78,7 @@ const latestWorkData = [
   },
   {
     imgLocation: QuizzicalPNG,
+    Placeholder: QuizzicalLQIP,
     id: 6,
     title: "QUIZZICAL",
     url: "Quizzical",
@@ -73,6 +87,7 @@ const latestWorkData = [
   },
   {
     imgLocation: PaintPNG,
+    Placeholder: PaintLQIP,
     id: 7,
     title: "Graphical Design",
     url: "Graphical Design",

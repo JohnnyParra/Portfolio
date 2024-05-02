@@ -2,7 +2,7 @@ import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 import BarChart from "../../components/BarChart/BarChart";
 
-import image from "../../assets/fullbody.jpg";
+import image from "/fullbody.jpg";
 
 import "./About.css"
 

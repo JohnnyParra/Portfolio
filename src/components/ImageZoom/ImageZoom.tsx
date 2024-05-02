@@ -1,11 +1,13 @@
 import { useState, useRef, CSSProperties, MouseEvent } from "react";
-import detectClick from "../../Hooks/detectClick";
+import detectClick from "../../Hooks/useDetectClick";
+import BlurImage from "../BlurImage/BlurImage";
 
 import "./ImageZoom.css";
 
 interface propTypes {
   image: string
   scale: number
+  Placeholder: string
 }
 
 export default function ImageZoom(props: propTypes) {
@@ -72,13 +74,14 @@ export default function ImageZoom(props: propTypes) {
       ref={containerRef}
       onMouseMove={(event: MouseEvent) => handleMouseMove(event)}
     >
-      <img
+      <BlurImage
         className={`image ${isZoom ? "zoom-out" : "zoom-in"}`}
         style={styles}
-        ref={ref}
-        src={props.image}
+        reference={ref}
         alt=""
-        onClick={(event: MouseEvent) => handleClick(event)}
+        handleClick={handleClick}
+        lowQualityImg={props.Placeholder}
+        highQualityImg={props.image}
       />
     </div>
   );

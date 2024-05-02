@@ -5,8 +5,8 @@ import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
-import linkedin from "../../assets/linkedin.svg";
-import github from "../../assets/github.svg";
+import linkedin from "/linkedin.svg";
+import github from "/github.svg";
 
 import "./Header.css";
 

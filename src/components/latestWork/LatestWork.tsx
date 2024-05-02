@@ -5,6 +5,7 @@ import "./LatestWork.css";
 
 type LatestWorkTypes = {
   imgLocation: string;
+  Placeholder: string | undefined;
   id: number;
   title: string;
   url: string;
@@ -18,7 +19,7 @@ export default function LatestWork(props: LatestWorkTypes) {
   return (
     <div className="latest-work-container">
       <div className="title">{props.title}</div>
-      <ImageZoom image={props.imgLocation} scale={2.5} />
+      <ImageZoom image={props.imgLocation} scale={2.5} Placeholder={props.Placeholder} />
       <div className="skills">
         <Skills skills={props.skills} />
       </div>

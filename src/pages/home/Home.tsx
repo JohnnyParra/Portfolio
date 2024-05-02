@@ -4,7 +4,7 @@ import { nanoid } from "nanoid";
 import Header from "../../components/header/Header";
 import LatestWork from "../../components/latestWork/LatestWork";
 import latestWorkData from "../../misc/latestWorkData";
-import headshot from "../../assets/headshot.png"
+import headshot from "/headshot.png"
 import ContactForm from "../../components/ContactForm/ContactForm";
 import Footer from "../../components/footer/Footer";
 import "./Home.css";
@@ -28,6 +28,7 @@ export default function Home() {
         <LatestWork
           key={nanoid()}
           imgLocation={project.imgLocation}
+          Placeholder={project.Placeholder}
           id={project.id}
           title={project.title}
           url={project.url}
