@@ -1,15 +1,15 @@
-import blogPNG from '/Blog.png';
 import blogLQIP from '/Blog(LQIP).webp';
-import jeopardyPNG from '/Jeopardy.png';
 import JeopardyLQIP from '/Jeopardy(LQIP).webp';
-import PaintPNG from '/Paint.png';
 import PaintLQIP from '/Paint(LQIP).webp';
-import QuizzicalPNG from '/Quizzical.png';
 import QuizzicalLQIP from '/Quizzical(LQIP).webp';
-import DiscordPNG from '/Discord-bot.png';
-import DiscordLQIP from '/Disrocd-bot(LQIP).webp';
-import TaskPNG from '/Task-Manager.png';
+import DiscordLQIP from '/Discord-bot(LQIP).webp';
 import TaskLQIP from '/Task-Manager(LQIP).webp';
+import blogPNG from '/Blog.png';
+import jeopardyPNG from '/Jeopardy.png';
+import PaintPNG from '/Paint.png';
+import QuizzicalPNG from '/Quizzical.png';
+import DiscordPNG from '/Discord-bot.png';
+import TaskPNG from '/Task-Manager.png';
 
 interface latestWorkData {
   imageLocation: string,
