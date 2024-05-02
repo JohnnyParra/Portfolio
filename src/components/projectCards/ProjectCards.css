@@ -24,12 +24,15 @@
   }
   & .learn-more {
       color: blue;
-      cursor: pointer;
       align-content: flex-end;
       text-align: right;
       flex-grow: 1;
       font-size: 13px;
       padding: 5px 20px 5px 0px;
       width: 100%;
+
+      & span {
+        cursor: pointer;
+      }
   }
 }

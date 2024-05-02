@@ -7,6 +7,7 @@ import "./ProjectCards.css";
 
 type ProjectCardTypes = {
   imgLocation: string;
+  Placeholder: string;
   id: number;
   title: string;
   url: string;
@@ -20,12 +21,12 @@ export default function ProjectCards(props: ProjectCardTypes) {
   return (
     <div className="latest-work-container">
       <div className="title">{props.title}</div>
-      <ImageZoom image={props.imgLocation} scale={2.5} />
+      <ImageZoom image={props.imgLocation} scale={2.5} Placeholder={props.Placeholder}/>
       <div className="skills">
         <Skills skills={props.skills} />
       </div>
       <div className="description">{props.description}</div>
-      <div className='learn-more' onClick={() => navigate(`/Project/${props.url}`)}>Learn more...</div>
+      <div className='learn-more'><span onClick={() => navigate(`/Project/${props.url}`)}>Learn more...</span></div>
     </div>
   );
 }

@@ -5,7 +5,7 @@ import "./LatestWork.css";
 
 type LatestWorkTypes = {
   imgLocation: string;
-  Placeholder: string | undefined;
+  Placeholder: string;
   id: number;
   title: string;
   url: string;
@@ -24,7 +24,7 @@ export default function LatestWork(props: LatestWorkTypes) {
         <Skills skills={props.skills} />
       </div>
       <div className="description">{props.description}</div>
-      <div className='learn-more' onClick={() => navigate(`/Project/${props.url}`)}>Learn more...</div>
+      <div className='learn-more'><span onClick={() => navigate(`/Project/${props.url}`)}>Learn more...</span></div>
     </div>
   );
 }

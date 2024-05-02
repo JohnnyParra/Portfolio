@@ -15,6 +15,7 @@
     height: 100%;
     margin: 0px;
     width: 100%;
+    object-fit: contain;
   }
   & .zoom-in:hover {
     cursor: -moz-zoom-in;
@@ -25,5 +26,11 @@
     cursor: -moz-zoom-out;
     cursor: -webkit-zoom-out;
     cursor: zoom-out;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .image-zoom-container {
+    height: auto;
   }
 }

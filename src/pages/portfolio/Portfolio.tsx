@@ -15,6 +15,7 @@ export default function Portfolio() {
         <ProjectCards
           key={nanoid()}
           imgLocation={project.imgLocation}
+          Placeholder={project.Placeholder}
           id={project.id}
           title={project.title}
           url={project.url}
