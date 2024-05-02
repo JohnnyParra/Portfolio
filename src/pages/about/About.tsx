@@ -2,7 +2,7 @@ import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 import BarChart from "../../components/BarChart/BarChart";
 
-import image from "/fullbody.jpg";
+import BlurImage from "../../components/BlurImage/BlurImage";
 
 import "./About.css"
 
@@ -13,7 +13,15 @@ export default function About() {
       <div className="content">
         <div className="top-container">
           <div className="image-container">
-            <img className="image" src={image} />
+            <BlurImage
+              className="image"
+              style={undefined}
+              reference={undefined}
+              alt={undefined}
+              handleClick={() => {}}
+              lowQualityImg="/fullbody(LQIP).webp"
+              highQualityImg="/fullbody.webp"
+             />
           </div>
           <div className="personal">
             <h1>Juan (Johnny) Manuel Parra</h1>
