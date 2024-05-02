@@ -4,9 +4,10 @@ import { nanoid } from "nanoid";
 import Header from "../../components/header/Header";
 import LatestWork from "../../components/latestWork/LatestWork";
 import latestWorkData from "../../misc/latestWorkData";
-import headshot from "/headshot.png"
+import headshot from "/headshot.webp";
 import ContactForm from "../../components/ContactForm/ContactForm";
 import Footer from "../../components/footer/Footer";
+import BlurImage from "../../components/BlurImage/BlurImage";
 import "./Home.css";
 
 export default function Home() {
@@ -44,7 +45,16 @@ export default function Home() {
       <Header />
       <div className="content">
         <div className="section">
-          <img className="headshot" src={headshot} />
+          <BlurImage 
+            className="headshot"
+            reference={undefined}
+            style={undefined}
+            alt={undefined}
+            handleClick={() => {}}
+            lowQualityImg={"/headshot(LQIP).webp"}
+            highQualityImg={"/headshot.webp"}
+          />
+          {/* <img className="headshot" src={headshot} /> */}
           <div className="test">
             <h2 className="title">{"<Software Developer>"}</h2>
             <h3 className="text">Staying informed about the latest technological advancements to deliver optimal solutions for any challenge</h3>
