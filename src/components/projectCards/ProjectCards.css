@@ -67,6 +67,7 @@
 
     & .left {
       margin-right: 0px;
+      width: 100%;
       min-width: 0px;
       padding: 0px;
 

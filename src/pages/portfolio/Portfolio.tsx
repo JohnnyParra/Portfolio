@@ -3,13 +3,13 @@ import { nanoid } from "nanoid";
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 import ProjectCards from "../../components/projectCards/ProjectCards";
-import latestWorkData from "../../misc/latestWorkData";
+import portfolioData from "../../misc/PortfolioData";
 
 import './Portfolio.css';
 
 export default function Portfolio() {
 
-  const projectCardElements: JSX.Element[] = latestWorkData.map((project) => {
+  const projectCardElements: JSX.Element[] = portfolioData.map((project) => {
     return (
       <div key={nanoid()} className="container">
         <ProjectCards

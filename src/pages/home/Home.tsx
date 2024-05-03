@@ -39,6 +39,10 @@ export default function Home() {
     );
   });
 
+  for (let i = 0; i < 3; i++) {
+
+  }
+
   return (
     <main className="home">
       <Header />
