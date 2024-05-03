@@ -7,7 +7,7 @@
   height: 100%;
   justify-content: center;
   margin: 5px 0px 5px 0px;
-  max-height: 273.83px;
+  height: 273.83px;
   overflow: hidden;
   width: 100%;
   
@@ -15,7 +15,7 @@
     height: 100%;
     margin: 0px;
     width: 100%;
-    object-fit: contain;
+    object-fit: fill;
   }
   & .zoom-in:hover {
     cursor: -moz-zoom-in;

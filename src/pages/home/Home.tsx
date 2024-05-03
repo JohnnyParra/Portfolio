@@ -4,7 +4,6 @@ import { nanoid } from "nanoid";
 import Header from "../../components/header/Header";
 import LatestWork from "../../components/latestWork/LatestWork";
 import latestWorkData from "../../misc/latestWorkData";
-import headshot from "/headshot.webp";
 import ContactForm from "../../components/ContactForm/ContactForm";
 import Footer from "../../components/footer/Footer";
 import BlurImage from "../../components/BlurImage/BlurImage";
