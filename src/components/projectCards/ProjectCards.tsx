@@ -19,14 +19,18 @@ export default function ProjectCards(props: ProjectCardTypes) {
   const navigate = useNavigate();
 
   return (
-    <div className="latest-work-container">
-      <div className="title">{props.title}</div>
-      <ImageZoom image={props.imgLocation} scale={2.5} Placeholder={props.Placeholder}/>
-      <div className="skills">
-        <Skills skills={props.skills} />
+    <div className="project-card-container">
+      <div className="left">
+        <div className="title">{props.title}</div>
+        <ImageZoom image={props.imgLocation} scale={2.5} Placeholder={props.Placeholder}/>
       </div>
-      <div className="description">{props.description}</div>
-      <div className='learn-more'><span onClick={() => navigate(`/Project/${props.url}`)}>Learn more...</span></div>
+      <div className="right">
+        <div className="skills">
+          <Skills skills={props.skills} />
+        </div>
+        <div className="description">{props.description}</div>
+        <div className='learn-more'><span onClick={() => navigate(`/Project/${props.url}`)}>Learn more...</span></div>
+      </div>
     </div>
   );
 }
