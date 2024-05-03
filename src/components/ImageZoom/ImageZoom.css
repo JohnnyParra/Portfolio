@@ -26,6 +26,7 @@
     cursor: -moz-zoom-out;
     cursor: -webkit-zoom-out;
     cursor: zoom-out;
+    touch-action: none;
   }
 }
 

@@ -1,4 +1,4 @@
-import { useState, useRef, CSSProperties, MouseEvent } from "react";
+import { useState, useRef, CSSProperties, MouseEvent, TouchEvent } from "react";
 import detectClick from "../../Hooks/useDetectClick";
 import BlurImage from "../BlurImage/BlurImage";
 
@@ -18,18 +18,31 @@ export default function ImageZoom(props: propTypes) {
     left: 0,
   });
 
-  const imageOffsetCalc = (event: MouseEvent) => {
+  const imageOffsetCalc = (event: MouseEvent | TouchEvent) => {
     const cRect = containerRef.current?.getBoundingClientRect();
 
     if (cRect) {
+      let clientY: number;
+      let clientX: number;
+
+      if (event.type === "touchmove") {
+        const touchEvent = event as TouchEvent;
+        clientX = touchEvent.changedTouches[0].clientX;
+        clientY = touchEvent.changedTouches[0].clientY;
+      } else {
+        const mouseEvent = event as MouseEvent;
+        clientY = mouseEvent.clientY;
+        clientX = mouseEvent.clientX;
+      }
+
       let ratioX: number = props.scale;
       let ratioY: number = props.scale;
 
       let limitX: number = ((cRect.width * props.scale) - cRect.width) / 2;
       let limitY: number = ((cRect.height * props.scale) - cRect.height) / 2;
 
-      let top: number = ((event.clientY - cRect.top) * -ratioY) + limitY * 1.5;
-      let left: number = ((event.clientX - cRect.left) * -ratioX) + limitX * 1.75;
+      let top: number = ((clientY - cRect.top) * -ratioY) + limitY * 1.5;
+      let left: number = ((clientX - cRect.left) * -ratioX) + limitX * 1.75;
 
       top = Math.max(-limitY, Math.min(limitY, top));
       left = Math.max(-limitX, Math.min(limitX, left));
@@ -49,7 +62,7 @@ export default function ImageZoom(props: propTypes) {
     }
   };
 
-  const handleMouseMove = (event: MouseEvent) => {
+  const handleMouseMove = (event: MouseEvent | TouchEvent) => {
     const newOffset = imageOffsetCalc(event);
     if (newOffset) {
       setOffset({
@@ -73,6 +86,7 @@ export default function ImageZoom(props: propTypes) {
       title={isZoom ? "" : "Click To Zoom In"}
       ref={containerRef}
       onMouseMove={(event: MouseEvent) => handleMouseMove(event)}
+      onTouchMove={(event: TouchEvent) => handleMouseMove(event)}
     >
       <BlurImage
         className={`image ${isZoom ? "zoom-out" : "zoom-in"}`}
