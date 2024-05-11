@@ -1,4 +1,4 @@
-import { CSSProperties, MouseEventHandler, RefObject } from "react";
+import { CSSProperties, RefObject } from "react";
 import useProgressiveImg from "../../Hooks/useProgressiveImg";
 
 interface BlurImage {

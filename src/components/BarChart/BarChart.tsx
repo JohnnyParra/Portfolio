@@ -5,7 +5,7 @@ import { AgChartOptions } from "ag-charts-community";
 import './BarChart.css'
 
 export default function BarChart() {
-  const [chartOptions, setChartOptions] = useState<AgChartOptions>({
+  const [chartOptions] = useState<AgChartOptions>({
     height: 700,
     data: [
       { skill: 'JavaScript', years: 2 },

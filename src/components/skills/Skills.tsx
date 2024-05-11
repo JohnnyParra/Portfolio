@@ -1,4 +1,4 @@
-import { ReactElement, useState } from 'react';
+import { useState } from 'react';
 import { nanoid } from "nanoid";
 
 import "./Skills.css";
