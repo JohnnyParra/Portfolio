@@ -9,7 +9,7 @@ const getId: {[key: string]: number}= {
 }
 
 export default function Project() {
-  const { url } = useParams();
+  const { url } = useParams<string>();
 
   console.log(getId[url ?? 0]);
 

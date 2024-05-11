@@ -6,7 +6,7 @@
   & .section {
     /* height: 800px; */
     width: 100%;
-    background-image: url("../../assets/background.jpg");
+    background-image: url("/background.webp");
     background-repeat: no-repeat;
     background-position: right;
     background-color: white;
@@ -16,7 +16,7 @@
     justify-content: space-around;
     
     & .headshot {
-      max-height: 671px;
+      height: 671px;
       padding: 25px 0px 25px 0px;
     }
     & .test {
@@ -81,7 +81,7 @@
       flex-direction: column;
 
       & .headshot {
-        max-height: 500px;
+        height: 500px;
         flex-shrink: 2;
       }
       & .test {

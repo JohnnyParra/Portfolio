@@ -1,10 +1,11 @@
 import Skills from "../skills/Skills";
 import { useNavigate } from "react-router-dom";
-
+import ImageZoom from "../ImageZoom/ImageZoom";
 import "./LatestWork.css";
 
 type LatestWorkTypes = {
   imgLocation: string;
+  Placeholder: string;
   id: number;
   title: string;
   url: string;
@@ -18,12 +19,12 @@ export default function LatestWork(props: LatestWorkTypes) {
   return (
     <div className="latest-work-container">
       <div className="title">{props.title}</div>
-      <img src={props.imgLocation} />
+      <ImageZoom image={props.imgLocation} scale={2.5} Placeholder={props.Placeholder} />
       <div className="skills">
         <Skills skills={props.skills} />
       </div>
       <div className="description">{props.description}</div>
-      <div className='learn-more' onClick={() => navigate(`/Project/${props.url}`)}>Learn more...</div>
+      <div className='learn-more'><span onClick={() => navigate(`/Project/${props.url}`)}>Learn more...</span></div>
     </div>
   );
 }

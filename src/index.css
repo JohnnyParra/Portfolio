@@ -17,10 +17,10 @@ html,body {
 
 @font-face {
   font-family: robotoSlab;
-  src: url("./assets/RobotoSlab.woff2") format("woff2");
+  src: url("/RobotoSlab.woff2") format("woff2");
   font-weight: 400;
 }
 @font-face {
   font-family: animeace;
-  src: url("./assets/animeace2_reg.woff2") format("woff2");
+  src: url("/animeace2_reg.woff2") format("woff2");
 }

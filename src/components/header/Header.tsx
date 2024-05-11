@@ -5,8 +5,8 @@ import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
-import linkedin from "../../assets/linkedin.svg";
-import github from "../../assets/github.svg";
+import linkedin from "/linkedin.svg";
+import github from "/github.svg";
 
 import "./Header.css";
 
@@ -23,7 +23,7 @@ export default function Header() {
 
   return (
     <header>
-      <img className="logo" src="/JPLogo.svg" onClick={() => navigate("/")}/>
+      <img className="logo" title="Home" src="/JPLogo.svg" onClick={() => navigate("/")}/>
       <div className="menu">
         {links}
       </div>
@@ -44,10 +44,10 @@ export default function Header() {
       </Accordion>
       <div className="social">
         <a href="https://www.linkedin.com/in/juan-parra-developer/" target="_blank">
-          <img className="linkedin" src={linkedin} />
+          <img className="linkedin" title="LinkedIn" src={linkedin} />
         </a>
         <a href="https://github.com/JohnnyParra" target="_blank">
-          <img className="github" src={github} />
+          <img className="github" title="Github" src={github} />
         </a>
       </div>
     </header>

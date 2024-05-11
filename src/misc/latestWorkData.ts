@@ -1,9 +1,13 @@
-import blogPNG from '../assets/Blog.png';
-import jeopardyPNG from '../assets/Jeopardy.png';
-import PaintPNG from '../assets/Paint.png';
+import blogLQIP from '/Blog(LQIP).webp';
+import JeopardyLQIP from '/Jeopardy(LQIP).webp';
+import PaintLQIP from '/Paint(LQIP).webp';
+import blogPNG from '/Blog.png';
+import jeopardyPNG from '/Jeopardy.png';
+import PaintPNG from '/Paint.png';
 
 interface latestWorkData {
   imageLocation: string,
+  Placeholder: string,
   id: number,
   title: string,
   url: string,
@@ -14,14 +18,16 @@ interface latestWorkData {
 const latestWorkData = [
   {
     imgLocation: blogPNG,
+    Placeholder: blogLQIP,
     id: 0,
-    title: "BLOG WEBSITE",
+    title: "BLOG",
     url: "blog-application",
     description: "Blog website where users can do the following: create posts, save posts to drafts, delete/edit owned posts, and comment/like other users posts/comments.  Creating a posts consists of adding a(n): title, description, category, body content, and image. Users can then find content by searching for it or by choosing a category(not necessary) and/or sorting by most liked or recent posts.",
     skills: ["React", "JavaScript", "Express", "MySQL", "HTML/CSS"],
   },
   {
     imgLocation: jeopardyPNG,
+    Placeholder: JeopardyLQIP,
     id: 1,
     title: "JEOPARDY",
     url: "Jeopardy",
@@ -30,6 +36,7 @@ const latestWorkData = [
   },
   {
     imgLocation: PaintPNG,
+    Placeholder: PaintLQIP,
     id: 2,
     title: "PAINT APP",
     url: "Paint App",
