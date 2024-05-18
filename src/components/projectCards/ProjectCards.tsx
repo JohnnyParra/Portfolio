@@ -1,5 +1,4 @@
 import Skills from "../skills/Skills";
-import { useNavigate } from "react-router-dom";
 
 import ImageZoom from "../ImageZoom/ImageZoom";
 
@@ -18,8 +17,6 @@ type ProjectCardTypes = {
 }; // from Home.tsx
 
 export default function ProjectCards(props: ProjectCardTypes) {
-  const navigate = useNavigate();
-  console.log(props)
 
   return (
     <div className="project-card-container">

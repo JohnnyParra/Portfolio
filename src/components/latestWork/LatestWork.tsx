@@ -1,5 +1,4 @@
 import Skills from "../skills/Skills";
-import { useNavigate } from "react-router-dom";
 import ImageZoom from "../ImageZoom/ImageZoom";
 import "./LatestWork.css";
 
@@ -16,7 +15,6 @@ type LatestWorkTypes = {
 }; // from Home.tsx
 
 export default function LatestWork(props: LatestWorkTypes) {
-  const navigate = useNavigate();
 
   return (
     <div className="latest-work-container">
