@@ -19,6 +19,8 @@ const latestWorkData = [
   {
     imgLocation: blogPNG,
     Placeholder: blogLQIP,
+    website: 'https://johnnymparra-blog.netlify.app',
+    github: 'https://github.com/JohnnyParra/Blog-Website-Client',
     id: 0,
     title: "BLOG",
     url: "blog-application",
@@ -28,6 +30,8 @@ const latestWorkData = [
   {
     imgLocation: jeopardyPNG,
     Placeholder: JeopardyLQIP,
+    website: 'https://jp-jeopardy.netlify.app',
+    github: 'https://github.com/JohnnyParra/Jeopardy-project',
     id: 1,
     title: "JEOPARDY",
     url: "Jeopardy",
