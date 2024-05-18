@@ -6,9 +6,11 @@ import jeopardyPNG from '/Jeopardy.png';
 import PaintPNG from '/Paint.png';
 
 interface latestWorkData {
+  id: number,
   imageLocation: string,
   Placeholder: string,
-  id: number,
+  website: string | null,
+  github: string | null,
   title: string,
   url: string,
   description: string,
@@ -19,6 +21,8 @@ const latestWorkData = [
   {
     imgLocation: blogPNG,
     Placeholder: blogLQIP,
+    website: 'https://johnnymparra-blog.netlify.app',
+    github: 'https://github.com/JohnnyParra/Blog-Website-Client',
     id: 0,
     title: "BLOG",
     url: "blog-application",
@@ -28,6 +32,8 @@ const latestWorkData = [
   {
     imgLocation: jeopardyPNG,
     Placeholder: JeopardyLQIP,
+    website: 'https://jp-jeopardy.netlify.app',
+    github: 'https://github.com/JohnnyParra/Jeopardy-project',
     id: 1,
     title: "JEOPARDY",
     url: "Jeopardy",
@@ -35,9 +41,11 @@ const latestWorkData = [
     skills: ["React", "JavaScript", "Express", "MySQL", "HTML/CSS"],
   },
   {
+    id: 2,
     imgLocation: PaintPNG,
     Placeholder: PaintLQIP,
-    id: 2,
+    website: null,
+    github: 'https://github.com/JohnnyParra/Qt-Paint',
     title: "PAINT APP",
     url: "Paint App",
     description: "Paint application using Qt version 6.7 where users can paint on a canvas with the following abilities: change the size and color of the pen, save and open files, and clearing the canvas.",

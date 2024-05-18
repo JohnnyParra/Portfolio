@@ -14,9 +14,11 @@ export default function Portfolio() {
       <div key={nanoid()} className="container">
         <ProjectCards
           key={nanoid()}
+          id={project.id}
           imgLocation={project.imgLocation}
           Placeholder={project.Placeholder}
-          id={project.id}
+          website={project.website}
+          github={project.github}
           title={project.title}
           url={project.url}
           description={project.description}
