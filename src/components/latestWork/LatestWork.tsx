@@ -4,9 +4,11 @@ import ImageZoom from "../ImageZoom/ImageZoom";
 import "./LatestWork.css";
 
 type LatestWorkTypes = {
+  id: number;
   imgLocation: string;
   Placeholder: string;
-  id: number;
+  website: string | null;
+  github: string | null;
   title: string;
   url: string;
   description: string;
@@ -24,7 +26,11 @@ export default function LatestWork(props: LatestWorkTypes) {
         <Skills skills={props.skills} />
       </div>
       <div className="description">{props.description}</div>
-      <div className='learn-more'><span onClick={() => navigate(`/Project/${props.url}`)}>Learn more...</span></div>
+      <div className='learn-more'>
+        {props.website && <a href={props.website} target="_blank">Website</a>}
+        {props.github && <a href={props.github} target="_blank">Github</a>}
+        {/* <span onClick={() => navigate(`/Project/${props.url}`)}>Learn more...</span> */}
+      </div>
     </div>
   );
 }

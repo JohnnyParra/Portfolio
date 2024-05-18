@@ -27,9 +27,11 @@ export default function Home() {
       <div key={nanoid()} className="container">
         <LatestWork
           key={nanoid()}
+          id={project.id}
           imgLocation={project.imgLocation}
           Placeholder={project.Placeholder}
-          id={project.id}
+          website={project.website}
+          github={project.github}
           title={project.title}
           url={project.url}
           description={project.description}

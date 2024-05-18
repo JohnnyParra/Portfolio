@@ -12,9 +12,11 @@ import DiscordPNG from '/Discord-bot.png';
 import TaskPNG from '/Task-Manager.png';
 
 interface portfolioData {
+  id: number,
   imageLocation: string,
   Placeholder: string,
-  id: number,
+  website: string | null,
+  github: string | null,
   title: string,
   url: string,
   description: string,

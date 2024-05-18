@@ -44,6 +44,12 @@
       font-size: 13px;
       padding: 5px 20px 5px 0px;
 
+      & a {
+        margin: 10px;
+        color: rgb(121, 121, 250);
+        font-size: 14px;
+      }
+
       & span {
         cursor: pointer;
       }
