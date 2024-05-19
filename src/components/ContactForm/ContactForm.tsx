@@ -27,6 +27,8 @@ export default function ContactForm() {
     type: "",
   });
 
+  console.log(process.env)
+
   emailjs.init({
     publicKey: process.env.VITE_PUBLIC_KEY,
     limitRate: {
