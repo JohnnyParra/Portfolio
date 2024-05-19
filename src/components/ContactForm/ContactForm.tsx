@@ -27,10 +27,8 @@ export default function ContactForm() {
     type: "",
   });
 
-  console.log(process.env)
-
   emailjs.init({
-    publicKey: process.env.VITE_PUBLIC_KEY,
+    publicKey: import.meta.env.VITE_PUBLIC_KEY,
     limitRate: {
       id: "app",
       throttle: 10000,
@@ -57,10 +55,10 @@ export default function ContactForm() {
         message
       };
       await emailjs.send(
-        process.env.VITE_SERVICE_ID as string,
-        process.env.VITE_TEMPLATE_ID as string,
+        import.meta.env.VITE_SERVICE_ID,
+        import.meta.env.VITE_TEMPLATE_ID,
         templateParams,
-        process.env.VITE_PUBLIC_KEY as string
+        import.meta.env.VITE_PUBLIC_KEY
       );
       toggleAlert("Thanks for sending a message!" , "success");
     } catch(e) {
