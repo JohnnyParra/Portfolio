@@ -62,7 +62,7 @@ const portfolioData = [
     imgLocation: jeopardyPNG,
     Placeholder: JeopardyLQIP,
     website: 'https://jp-jeopardy.netlify.app',
-    github: 'https://github.com/JohnnyParra/Jeopardy-project',
+    github: 'https://github.com/JohnnyParra/Jeopardy-Client',
     title: "JEOPARDY",
     url: "Jeopardy",
     description: "Jeopardy website where users can play the famous tv game show game Jeopardy! using questions from the actual show.  Includes double jeopardy, daily double, and final jeopardy.  Used the Levenshtein distance algorithm along with custom parsing to test user answers similarity to the correct answer.",
