@@ -4,12 +4,34 @@ import PaintLQIP from '/Paint(LQIP).webp';
 import QuizzicalLQIP from '/Quizzical(LQIP).webp';
 import DiscordLQIP from '/Discord-bot(LQIP).webp';
 import TaskLQIP from '/Task-Manager(LQIP).webp';
+import GraphicalLQIP from '/Graphic-collage(LQIP).webp'
+
 import blogPNG from '/Blog.png';
 import jeopardyPNG from '/Jeopardy.png';
 import PaintPNG from '/Paint.png';
 import QuizzicalPNG from '/Quizzical.png';
 import DiscordPNG from '/Discord-bot.png';
 import TaskPNG from '/Task-Manager.png';
+import GraphicalWebp from '/Graphic-collage.webp';
+
+// import OGLogoWebp from '/og-logo.webp';
+// import OGLogoLIQP from '/og-logo(LQIP).webp';
+
+// import AstroPNG from '/Astro-Space.png';
+// import AstroLQIP from '/Astro-Space(LQIP).webp';
+
+// import JPMLogoSVG from '/JPLogo.svg';
+// import JPLogoSVG from '/JPOnlyLogo.svg';
+
+// import PayneWebp from '/Max-Payne-wallpaper-screenshot.webp';
+// import PayneLQIP from '/Max-Payne-wallpaper-screenshot(LQIP).webp';
+
+// import PayneCover1SVG from '/Max-Payne-1-Cover.svg';
+// import PayneCover2SVG from '/Max-Payne-2-Cover.svg';
+// import PayneMask1SVG from '/Max-Payne-1-OP-Mask.svg';
+// import PayneMask2SVG from '/Max-Payne-2-OP-Mask.svg';
+
+
 
 interface portfolioData {
   id: number,
@@ -20,7 +42,7 @@ interface portfolioData {
   title: string,
   url: string,
   description: string,
-  skills: string[]
+  skills: string[],
 }
 
 const portfolioData = [
@@ -103,14 +125,103 @@ const portfolioData = [
   },
   {
     id: 7,
-    imgLocation: PaintPNG,
-    Placeholder: PaintLQIP,
+    imgLocation: GraphicalWebp,
+    Placeholder: GraphicalLQIP,
     website: null,
     github: null,
     title: "Graphical Design",
     url: "Graphical Design",
     description: "Timeline of my journey in using graphical design applications to create logos, wallpapers, and advertisements",
     skills: ["Adobe Illustrator", "GIMP", "Canvas"],
+    // body: [
+    //   [
+    //     {
+    //       type: 'text', 
+    //       content: '',
+    //     },
+    //     {
+    //       type: 'images', 
+    //       images: [
+    //         [OGLogoWebp, OGLogoLIQP],
+    //       ],
+    //     },
+    //     {
+    //       type: 'text', 
+    //       content: '',
+    //     },
+    //   ],
+    //   [
+    //     {
+    //       type: 'text', 
+    //       content: '',
+    //     },
+    //     {
+    //       type: 'images', 
+    //       images: [
+    //         [AstroPNG, AstroLQIP],
+    //       ],
+    //     },
+    //     {
+    //       type: 'text', 
+    //       content: '',
+    //     },
+    //   ],
+    //   [
+    //     {
+    //       type: 'text', 
+    //       content: '',
+    //     },
+    //     {
+    //       type: 'images', 
+    //       images: [
+    //         [JPLogoSVG],
+    //         [JPMLogoSVG],
+    //       ],
+    //     },
+    //     {
+    //       type: 'text', 
+    //       content: '',
+    //     },
+    //   ],
+    //   [
+    //     {
+    //       type: 'text', 
+    //       content: '',
+    //     },
+    //     {
+    //       type: 'images', 
+    //       images: [
+    //         [PayneWebp, PayneLQIP]
+    //       ],
+    //     },
+    //     {
+    //       type: 'text', 
+    //       content: '',
+    //     },
+    //     {
+    //       type: 'images', 
+    //       images: [
+    //         [PayneCover1SVG],
+    //         [PayneCover2SVG],
+    //       ],
+    //     },
+    //     {
+    //       type: 'text', 
+    //       content: '',
+    //     },
+    //     {
+    //       type: 'images', 
+    //       images: [
+    //         [PayneMask1SVG],
+    //         [PayneMask2SVG],
+    //       ],
+    //     },
+    //     {
+    //       type: 'text', 
+    //       content: '',
+    //     },
+    //   ]
+    // ]
   },
 ];
 export default portfolioData;

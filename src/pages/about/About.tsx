@@ -47,7 +47,7 @@ export default function About() {
             </div>
             <div className="summary row">
               <h4>Summary:</h4>
-              <p>It was my junior year when I started to use phyton, reading data from files and using matplotlib to visualize it, to help with my research in physics and take more advanced Computer Science courses where I started to contemplate my future.  Than an unforeseen global pandemic happened during my last semester and I graduated during a time where the world was on hold.  This gave me time to think and choose whether I wanted to continue my education in Physics or pursue a career as a Software Developer. I chose the latter and enrolled in a web development bootcamp.  That turned into an internship and when that ended I started working on my own projects and building up my portfolio</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Cum sociis natoque penatibus et magnis dis parturient montes nascetur. Enim blandit volutpat maecenas volutpat blandit aliquam etiam. Egestas fringilla phasellus faucibus scelerisque eleifend donec. Arcu risus quis varius quam quisque id diam. At varius vel pharetra vel turpis nunc eget. Convallis aenean et tortor at risus viverra adipiscing. Cras fermentum odio eu feugiat. Dis parturient montes nascetur ridiculus mus mauris vitae ultricies leo. Mauris ultrices eros in cursus. Est velit egestas dui id. Sed vulputate mi sit amet mauris commodo quis. Fames ac turpis egestas maecenas pharetra convallis. Tincidunt nunc pulvinar sapien et.</p>
             </div>
           </div>
         </div>
