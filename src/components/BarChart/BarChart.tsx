@@ -28,7 +28,7 @@ export default function BarChart() {
       { skill: 'Qt', years: 0.1 }
     ],
     title: {
-      text: "Years of Experience Since Graduation"
+      text: "Years of Experience Using"
     },
     series: [
       {
