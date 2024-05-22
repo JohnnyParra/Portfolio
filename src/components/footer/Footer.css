@@ -4,8 +4,9 @@ Footer {
   color: white;
   display: flex;
   flex-direction: column;
-  
   justify-self: flex-end;
+  width: 100%;
+  
 
   & .row {
     margin: 5px;

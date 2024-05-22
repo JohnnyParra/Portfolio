@@ -17,8 +17,8 @@ html,body {
 
 @font-face {
   font-family: robotoSlab;
-  src: url("/RobotoSlab.woff2") format("woff2");
   font-weight: 400;
+  src: url("/RobotoSlab.woff2") format("woff2");
 }
 @font-face {
   font-family: animeace;

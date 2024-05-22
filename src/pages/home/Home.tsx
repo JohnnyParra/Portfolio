@@ -36,6 +36,7 @@ export default function Home() {
           url={project.url}
           description={project.description}
           skills={project.skills}
+          body={project.body}
         />
       </div>
     );

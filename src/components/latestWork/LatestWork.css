@@ -1,15 +1,15 @@
 .latest-work-container {
     align-items: center;
-    border-radius: 5px;
+    background: linear-gradient( white, silver, white, white);
     border: 1px solid black;
+    border-radius: 5px;
     box-shadow: 1px 1px 3px rgb(58, 58, 58);
     display: flex;
     flex-direction: column;
-    min-height: 500px;
     margin: 5px;
+    min-height: 500px;
     padding: 5px;
     width: 500px;
-    background: linear-gradient( white, silver, white, white);
 
     & .title {
         font-family: animeace !important;
@@ -23,22 +23,24 @@
         width: 100%;
     }
     & .learn-more {
-        color: blue;
         align-content: flex-end;
-        text-align: right;
+        color: blue;
         flex-grow: 1;
         font-size: 13px;
         padding: 5px 20px 5px 0px;
+        text-align: right;
         width: 100%;
         
         & a {
-            margin: 10px;
             color: rgb(121, 121, 250);
             font-size: 14px;
+            margin: 10px;
         }
 
         & span {
+            color: rgb(121, 121, 250);
             cursor: pointer;
+            font-size: 14px;
         }
     }
 }

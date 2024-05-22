@@ -7,13 +7,13 @@ header {
   width: 100%;
   
   & .logo {
+    cursor: pointer;
     display: flex;
     flex-grow: 1;
+    height: 90px;
     justify-content: center;
     margin: 10px 0px 10px 0px;
-    height: 90px;
     width: 90px;
-    cursor: pointer;
   }
   & .menu {
     display: flex;
@@ -76,23 +76,23 @@ header {
 
     & .logo {
       height: 70px;
-      width: 70px;
+      left: 0;
       margin: 5px;
       position: absolute;
-      z-index: 10;
-      left: 0;
       top: 0;
+      width: 70px;
+      z-index: 10;
     }
     & .menu {
       display: none;
     }
     & .dropdown {
+      align-items: center;
+      background: black;
+      color: white;
       display: flex;
       flex-direction: column;
       width: 100%;
-      background: black;
-      color: white;
-      align-items: center;
 
       & .btn:hover {
         filter: invert(51%) sepia(35%) saturate(922%) hue-rotate(202deg) brightness(94%) contrast(109%);
@@ -101,10 +101,10 @@ header {
         color: white;
       }
       & .content { 
+        align-items: center;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
 
         & a {
           margin: 8px 0px 8px 0px;

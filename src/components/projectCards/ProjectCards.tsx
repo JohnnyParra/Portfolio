@@ -1,3 +1,4 @@
+import { useNavigate  } from "react-router-dom";
 import Skills from "../skills/Skills";
 
 import ImageZoom from "../ImageZoom/ImageZoom";
@@ -14,9 +15,14 @@ type ProjectCardTypes = {
   url: string;
   description: string;
   skills: string[];
+  body: {
+    type: 'text' | 'images' | 'title';
+    content: string | string[][]
+  }[][] | null;
 }; // from Home.tsx
 
 export default function ProjectCards(props: ProjectCardTypes) {
+  const navigate = useNavigate();
 
   return (
     <div className="project-card-container">
@@ -32,7 +38,7 @@ export default function ProjectCards(props: ProjectCardTypes) {
         <div className='learn-more'>
           {props.website && <a href={props.website} target="_blank">Website</a>}
           {props.github && <a href={props.github} target="_blank">Github</a>}
-          {/* <span onClick={() => navigate(`/Project/${props.url}`)}>Learn more...</span> */}
+          {props.body && <span onClick={() => navigate(`/Project/${props.url}/${props.id}`)}>Learn more...</span>}
         </div>
       </div>
     </div>

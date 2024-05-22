@@ -7,17 +7,21 @@ import PaintPNG from '/Paint.png';
 
 interface latestWorkData {
   id: number,
-  imageLocation: string,
+  imgLocation: string,
   Placeholder: string,
   website: string | null,
   github: string | null,
   title: string,
   url: string,
   description: string,
-  skills: string[]
+  skills: string[],
+  body: {
+    type: 'text' | 'images' | 'title';
+    content: string | string[][]
+  }[][] | null;
 }
 
-const latestWorkData = [
+const latestWorkData: latestWorkData[] = [
   {
     imgLocation: blogPNG,
     Placeholder: blogLQIP,
@@ -28,6 +32,7 @@ const latestWorkData = [
     url: "blog-application",
     description: "Blog website where users can do the following: create posts, save posts to drafts, delete/edit owned posts, and comment/like other users posts/comments.  Creating a posts consists of adding a(n): title, description, category, body content, and image. Users can then find content by searching for it or by choosing a category(not necessary) and/or sorting by most liked or recent posts.",
     skills: ["React", "JavaScript", "Express", "MySQL", "HTML/CSS"],
+    body: null,
   },
   {
     imgLocation: jeopardyPNG,
@@ -39,6 +44,7 @@ const latestWorkData = [
     url: "Jeopardy",
     description: "Jeopardy website where users can play the famous tv game show game Jeopardy! using questions from the actual show.  Includes double jeopardy, daily double, and final jeopardy.  Used the Levenshtein distance algorithm along with custom parsing to test user answers similarity to the correct answer.",
     skills: ["React", "JavaScript", "Express", "MySQL", "HTML/CSS"],
+    body: null,
   },
   {
     id: 2,
@@ -50,6 +56,7 @@ const latestWorkData = [
     url: "Paint App",
     description: "Paint application using Qt version 6.7 where users can paint on a canvas with the following abilities: change the size and color of the pen, save and open files, and clearing the canvas.",
     skills: ["C++", "Qt"],
+    body: null,
   },
 ];
 export default latestWorkData;
