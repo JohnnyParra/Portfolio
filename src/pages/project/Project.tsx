@@ -13,7 +13,7 @@ export default function Project() {
   const { id } = useParams<string>();
   const data = portfolioData[Number(id)];
 
-  const bodyElements = data.body.map(body => {
+  const bodyElements = data.body!.map(body => {
     const sectionElements = body.map(section => {
       let type: string = section.type;
       if (type === 'title') {
@@ -21,7 +21,8 @@ export default function Project() {
       } else if (type === 'text') {
         return (<div key={nanoid()} className={type}>{section.content}</div>)
       } else if (type === 'images') {
-        const imageElements = section.content.map(images => {
+        const contentArray: string[][] = section.content as string[][];
+        const imageElements = contentArray.map(images => {
           return (
             <BlurImage
               key={nanoid()}
