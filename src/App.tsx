@@ -1,5 +1,4 @@
-import { Routes, Route, BrowserRouter as Router } from "react-router-dom";
-
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./pages/home/Home";
 import About from "./pages/about/About";
 import Portfolio from "./pages/portfolio/Portfolio";
@@ -8,16 +7,14 @@ import Project from "./pages/project/Project";
 
 import "./App.css";
 
+const router = createBrowserRouter([
+  { path: "/", element: <Home />},
+  { path: "/About", element: <About />},
+  { path: "/Portfolio", element: <Portfolio />},
+  { path: "/Contact", element: <Contact />},
+  { path: "/Project/:url/:id", element: <Project />},
+])
+
 export default function App() {
-  return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/About" element={<About />} />
-        <Route path="/Portfolio" element={<Portfolio />} />
-        <Route path="/Contact" element={<Contact />} />
-        <Route path="/Project/:url/:id" element={<Project />} />
-      </Routes>
-    </Router>
-  );
+  return <RouterProvider router={router} />
 }

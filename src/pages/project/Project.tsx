@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom';
+import { ScrollRestoration, useParams } from 'react-router-dom';
 import { nanoid } from 'nanoid';
 
 import Header from "../../components/header/Header";
@@ -52,6 +52,7 @@ export default function Project() {
         {bodyElements}
       </div>
       <Footer />
+      <ScrollRestoration />
     </main>
   )
 }

@@ -5,6 +5,7 @@ import BarChart from "../../components/BarChart/BarChart";
 import BlurImage from "../../components/BlurImage/BlurImage";
 
 import "./About.css"
+import { ScrollRestoration } from "react-router-dom";
 
 export default function About() {
   return (
@@ -54,6 +55,7 @@ export default function About() {
         <BarChart />
       </div>
       <Footer />
+      <ScrollRestoration />
     </main>
   );
 }

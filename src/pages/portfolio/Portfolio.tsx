@@ -6,6 +6,7 @@ import ProjectCards from "../../components/projectCards/ProjectCards";
 import portfolioData from "../../misc/PortfolioData";
 
 import './Portfolio.css';
+import { ScrollRestoration } from "react-router-dom";
 
 export default function Portfolio() {
 
@@ -36,6 +37,7 @@ export default function Portfolio() {
         <div className="project-cards">{projectCardElements}</div>
       </div>
       <Footer />
+      <ScrollRestoration />
     </main>
   );
 }

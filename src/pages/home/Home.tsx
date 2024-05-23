@@ -8,6 +8,7 @@ import ContactForm from "../../components/ContactForm/ContactForm";
 import Footer from "../../components/footer/Footer";
 import BlurImage from "../../components/BlurImage/BlurImage";
 import "./Home.css";
+import { ScrollRestoration } from "react-router-dom";
 
 export default function Home() {
   // const fetchUsers = async () => {
@@ -75,6 +76,7 @@ export default function Home() {
         </div>
       </div>
       <Footer />
+      <ScrollRestoration />
     </main>
   );
 }
