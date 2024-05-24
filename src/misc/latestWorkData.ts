@@ -37,7 +37,7 @@ const latestWorkData: latestWorkData[] = [
       liking posts and comments from other users. To enhance content discovery, users can search for 
       specific posts, browse through categories, and sort posts by the most liked or most 
       recent.`,
-    skills: ["React", "JavaScript", "Express", "MySQL", "HTML/CSS"],
+    skills: ["React", "JavaScript", "Express", "MySQL", "HTML/CSS", "Azure Database"],
     body: null,
   },
   {
@@ -52,7 +52,7 @@ const latestWorkData: latestWorkData[] = [
       actual questions from the show. The game includes classic features such as Double Jeopardy, Daily 
       Double, and Final Jeopardy. To evaluate user answers, the site employs the Levenshtein distance 
       algorithm combined with custom parsing to measure similarity to the correct answers.`,
-    skills: ["React", "JavaScript", "Express", "MySQL", "HTML/CSS"],
+    skills: ["React", "JavaScript", "Express", "MySQL", "HTML/CSS", "AWS RDS"],
     body: null,
   },
   {

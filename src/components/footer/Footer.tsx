@@ -17,7 +17,7 @@ export default function Footer() {
         <a onClick={() => window.scrollTo({top: 0, left: 0, behavior: 'smooth'})}>back to top</a>
       </div>
       <div className="separator"></div>
-      <p>Another way to contact me:  johnny.m.parra1996@gmail.com</p>
+      <p>Created Using React</p>
     </footer>
   )
 }

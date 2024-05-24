@@ -40,15 +40,15 @@ export default function About() {
             </div>
             <div className="fav-movies row">
               <h4 className="title">Favorite Movies:</h4>
-              <p>Die Hard,  LOTR: Fellowship,  Interstellar  <a href="https://boxd.it/7UK3B" target="_blank" title="My Letterboxd account">( Letterboxed )</a></p>
+              <p>Die Hard,  LOTR: Fellowship,  Interstellar  <a href="https://boxd.it/7UK3B" target="_blank" title="My Letterboxd account">(Letterboxed)</a></p>
             </div>
             <div className="fav-games row">
               <h4 className="title">Favorite Games:</h4>
               <p>The Witcher 3, Arkham City, Mass Effect 2, Baldur's Gate 3</p>
             </div>
             <div className="summary row">
-              <h4>Summary:</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Cum sociis natoque penatibus et magnis dis parturient montes nascetur. Enim blandit volutpat maecenas volutpat blandit aliquam etiam. Egestas fringilla phasellus faucibus scelerisque eleifend donec. Arcu risus quis varius quam quisque id diam. At varius vel pharetra vel turpis nunc eget. Convallis aenean et tortor at risus viverra adipiscing. Cras fermentum odio eu feugiat. Dis parturient montes nascetur ridiculus mus mauris vitae ultricies leo. Mauris ultrices eros in cursus. Est velit egestas dui id. Sed vulputate mi sit amet mauris commodo quis. Fames ac turpis egestas maecenas pharetra convallis. Tincidunt nunc pulvinar sapien et.</p>
+              <h4>About Me:</h4>
+              <p>I'm all about building, fixing, and helping out—whether it's with programming, computers, or even cars. I love improving my skills and learning new things. I'm mostly a self-taught programmer and pretty good at solving problems on my own, thanks to my Google skills and knowing how to dig into documentation. So far, I've always managed to find solutions to the challenges I face in my projects, though I know there's always more to learn. Plus, I get along easily with others and can communicate problems efficiently, making teamwork a breeze.</p>
             </div>
           </div>
         </div>
