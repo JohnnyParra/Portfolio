@@ -37,6 +37,12 @@ export default function Project() {
           )
         });
         return (<div key={nanoid()} className={type}>{imageElements}</div>)
+      } else if (type === 'link') {
+        return (
+          <div className="link">
+            <a href={section.url} target="_blank">{section.content}</a>
+          </div>
+        )
       } else {
         throw Error('Incorrect Type Used Project.tsx')
       }

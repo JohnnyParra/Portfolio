@@ -64,7 +64,16 @@
           }
         }
       }
+      & .link {
+        display: flex;
+        justify-content: center;
+
+        & a {
+          color: rgb(121, 121, 250);
+          font-size: 14px;
+          margin: 10px;
+        }
+      }
     }
   }
-
 }

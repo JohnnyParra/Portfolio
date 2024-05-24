@@ -15,8 +15,9 @@ type LatestWorkTypes = {
   description: string;
   skills: string[];
   body: {
-    type: 'text' | 'images' | 'title';
-    content: string | string[][]
+    type: 'text' | 'images' | 'title' | 'link';
+    content: string | string[][];
+    url?: string;
   }[][] | null;
 }; // from Home.tsx
 

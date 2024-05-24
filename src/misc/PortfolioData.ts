@@ -31,6 +31,12 @@ import PayneCover2SVG from '/Max-Payne-2-Cover.svg';
 import PayneMask1SVG from '/Max-Payne-1-OP-Mask.svg';
 import PayneMask2SVG from '/Max-Payne-2-OP-Mask.svg';
 
+import TestingPNG from '/testing.png';
+import TestingLQIP from '/testing(LQIP).webp';
+
+import EndpointPNG from '/endpoints.png';
+import EndpointLQIP from '/endpoints(LQIP).webp';
+
 interface portfolioData {
   id: number,
   imgLocation: string,
@@ -42,8 +48,9 @@ interface portfolioData {
   description: string,
   skills: string[],
   body: {
-    type: 'text' | 'images' | 'title';
-    content: string | string[][]
+    type: 'text' | 'images' | 'title' | 'link';
+    content: string | string[][];
+    url?: string;
   }[][] | null;
 }
 
@@ -56,7 +63,12 @@ const portfolioData: portfolioData[] = [
     github: 'https://github.com/JohnnyParra/Blog-Website-Client',
     title: "BLOG",
     url: "blog-application",
-    description: "Blog website where users can do the following: create posts, save posts to drafts, delete/edit owned posts, and comment/like other users posts/comments.  Creating a posts consists of adding a(n): title, description, category, body content, and image. Users can then find content by searching for it or by choosing a category(not necessary) and/or sorting by most liked or recent posts.",
+    description: `A Blog platform that allows users to create posts by adding a title, description, 
+      category, body content, and image. Users can save posts as drafts for future editing and have the 
+      ability to edit or delete their own posts. Interaction is encouraged through commenting on and 
+      liking posts and comments from other users. To enhance content discovery, users can search for 
+      specific posts, browse through categories, and sort posts by the most liked or most 
+      recent.`,
     skills: ["React", "JavaScript", "Express", "MySQL", "HTML/CSS"],
     body: null,
   },
@@ -68,7 +80,10 @@ const portfolioData: portfolioData[] = [
     github: 'https://github.com/JohnnyParra/Jeopardy-Client',
     title: "JEOPARDY",
     url: "Jeopardy",
-    description: "Jeopardy website where users can play the famous tv game show game Jeopardy! using questions from the actual show.  Includes double jeopardy, daily double, and final jeopardy.  Used the Levenshtein distance algorithm along with custom parsing to test user answers similarity to the correct answer.",
+    description: `This Jeopardy website lets users experience the iconic TV game show Jeopardy! with 
+      actual questions from the show. The game includes classic features such as Double Jeopardy, Daily 
+      Double, and Final Jeopardy. To evaluate user answers, the site employs the Levenshtein distance 
+      algorithm combined with custom parsing to measure similarity to the correct answers.`,
     skills: ["React", "JavaScript", "Express", "MySQL", "HTML/CSS"],
     body: null,
   },
@@ -80,7 +95,9 @@ const portfolioData: portfolioData[] = [
     github: 'https://github.com/JohnnyParra/Qt-Paint',
     title: "PAINT APP",
     url: "Paint App",
-    description: "Paint application using Qt version 6.7 where users can paint on a canvas with the following abilities: change the size and color of the pen, save and open files, and clearing the canvas.",
+    description: `A paint application, built with Qt version 6.7, allows users to paint on a canvas 
+      with a variety of features. Users can change the size and color of the pen, save and open files, 
+      and clear the canvas for a fresh start.`,
     skills: ["C++", "Qt"],
     body: null,
   },
@@ -92,7 +109,8 @@ const portfolioData: portfolioData[] = [
     github: 'https://github.com/JohnnyParra/johnny-5-discord-bot',
     title: "DISCORD BOT",
     url: "Discord Bot",
-    description: "Discord bot that allows users commands including but not limited to: playing blackjack, scheduling messages, and keeping track of time spent in a voice channel",
+    description: `A Discord bot that offers a range of commands, including but not limited to playing 
+      blackjack, scheduling messages, and tracking the time users spend in voice channels.`,
     skills: ["JavaScript", "Discord.js", "MongoDB"],
     body: null,
   },
@@ -104,21 +122,110 @@ const portfolioData: portfolioData[] = [
     github: 'https://github.com/JohnnyParra/Task-Manager-Client',
     title: "TASK MANAGER",
     url: "Task Manager",
-    description: "Task manager website akin to Clockify where users can schedule tasks with ease and order it to their desires",
+    description: `A task manager website, similar to Clockify, that enables users to schedule tasks 
+      effortlessly and organize them according to their preferences.`,
     skills: ["React", "Javascript", "HTML/CSS", "MySQL", "AWS"],
     body: null,
   },
   {
     id: 5,
-    imgLocation: PaintPNG,
-    Placeholder: PaintLQIP,
+    imgLocation: TestingPNG,
+    Placeholder: TestingLQIP,
     website: null,
     github: null,
     title: "STUDY BUDDY BACKEND",
     url: "Study Buddy",
-    description: "A backend created with Express.js with a database in PostgreSQL for the frontend team to use along with some prompt testing using ChatGPT to help generate programming test questions",
+    description: `Our backend, built with Express.js and a PostgreSQL database, is designed for the 
+      frontend team to use. Additionally, it includes prompt testing using ChatGPT to help generate 
+      programming test questions. (Update in Progress)`,
     skills: ["PostgreSQL","Express.js", "Prompt engineering"],
-    body: null,
+    body: [
+      [
+        {
+          type: 'title',
+          content: 'The Pitch'
+        },
+        {
+          type: 'text',
+          content: `Bay Valley Tech sought to develop a dual-purpose website, serving both as a 
+            teacher quiz tool and a student "study buddy". Our project team was divided into two 
+            groups: front-end and back-end, each comprising approximately five members. As part of 
+            the more experienced back-end team, my responsibilities included designing a robust 
+            database, creating a seamless API for front-end integration, and conducting feasibility 
+            research on incorporating ChatGPT for automated question and quiz generation. Our task 
+            was broad and open-ended, providing ample opportunity for innovation and creative 
+            problem-solving.`
+        },
+      ],
+      [
+        {
+          type: 'title',
+          content: 'Testing Chatgpt'
+        },
+        {
+          type: 'text',
+          content: `Prior to delving into database implementation, our team prioritized exploring the 
+            feasibility of leveraging ChatGPT for generating multiple-choice questions. During this 
+            phase, we experimented with several models, with my particular focus directed towards the 
+            GPT-3.5 Turbo model. The screenshot extracted from our Figma file, shows a sample of the 
+            testing and iterations I contributed to. This preliminary stage laid the groundwork for our 
+            subsequent decisions and development efforts.`
+        },
+        {
+          type: 'images',
+          content: [
+            [TestingPNG, TestingLQIP],
+          ]
+        },
+        {
+          type: 'text',
+          content: `In setting up this model, we first gave the bot a specific role and then sent it 
+            a template to guide how it should format its responses. In the image above the template
+            also includes a line asking for questions which would be created and sent from the
+            front-end based on some selections the users made. Since every few characters counts as a 
+            token and sending tokens costs money, it's important to keep things brief to reduce costs
+            but to so brief that the bot starts to return unsatisfactory results.`
+        }
+      ],
+      [
+        {
+          type: 'title',
+          content: `Database and API`,
+        },
+        {
+          type: 'text',
+          content: `We opted for PostgreSQL primarily due to its capability to utilize arrays as a 
+            datatype. This decision stemmed from our design process in Figma, where we wanted 
+            one of the data types to be an array containing question keys. Since the front-end was 
+            still in the design phase, we had to make informed assumptions regarding its potential 
+            requirements. The image below, extracted from Figma, illustrates how data was intended to 
+            be transmitted to the client, along with various endpoints they could access.`
+        },
+        {
+          type: 'images',
+          content: [
+            [EndpointPNG, EndpointLQIP],
+          ],
+        }
+      ],
+      [
+        {
+          type: 'title',
+          content: 'Final Decisions'
+        },
+        {
+          type: 'text',
+          content: `With costs in mind we made the decision that at first only teachers
+            would be able to use Chatgpt to generate quizzes. Student quizzes would be 
+            from the database of already stored Chatgpt-generated questions. At the time, 
+            Chatgpt lacked a reliable way to generate quizzes on its own without human 
+            oversight. As a workaround, we proposed that it could generate multiple 
+            choices questions for teachers to review and amend minor errors before 
+            saving them to the database. We transitioned to a different project while
+            the front-end continued its development phase`
+        }
+      ],
+    ],
   },
   {
     id: 6,
@@ -128,7 +235,8 @@ const portfolioData: portfolioData[] = [
     github: 'https://github.com/JohnnyParra/Quizzical-React-App',
     title: "QUIZZICAL",
     url: "Quizzical",
-    description: "Simple Quiz website where users can choose different categories along with a difficulty level",
+    description: `A simple quiz website allows users to select different categories and choose a 
+      difficulty level for their quizzes.`,
     skills: ["React", "JavaScript", "HTML/CSS"],
     body: null,
   },
@@ -140,7 +248,8 @@ const portfolioData: portfolioData[] = [
     github: null,
     title: "Graphical Design",
     url: "Graphical Design",
-    description: "Timeline of my journey in using graphical design applications to create logos, wallpapers, and advertisements",
+    description: `This overview details my journey in using graphic design applications to create logos 
+      and wallpapers.`,
     skills: ["Adobe Illustrator", "GIMP", "Canvas"],
     body: [
       [
@@ -215,6 +324,11 @@ const portfolioData: portfolioData[] = [
           content: `The assets for this wallpaper were created using Illustrator, and I applied live
             post effects with Wallpaper Engine. As of now, it has 144 subscribers and 14 favorites. 
             Impressively, it is the second most popular wallpaper this year for Max Payne.`,
+        },
+        {
+          type: 'link',
+          content: 'Wallpaper on Steam',
+          url: 'https://steamcommunity.com/sharedfiles/filedetails/?id=3084893831'
         },
         {
           type: 'images', 

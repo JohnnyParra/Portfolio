@@ -16,8 +16,9 @@ type ProjectCardTypes = {
   description: string;
   skills: string[];
   body: {
-    type: 'text' | 'images' | 'title';
+    type: 'text' | 'images' | 'title' | 'link';
     content: string | string[][]
+    url?: string
   }[][] | null;
 }; // from Home.tsx
 
