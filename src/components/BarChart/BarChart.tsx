@@ -62,7 +62,7 @@ export default function BarChart() {
 
   return (
     <div className="bar-chart-container">
-      <div className="bar-chart">
+      <div className="bar-chart" >
         <AgChartsReact options={chartOptions} />
       </div>
     </div>

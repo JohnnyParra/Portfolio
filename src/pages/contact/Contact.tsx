@@ -18,7 +18,7 @@ export default function Contact() {
         </div>
         <div className="location">
           <h3>Location:</h3>
-          <p>Turlock, CA</p>
+          <p>San Leandro, CA</p>
         </div>
         <div className="social">
           <h3>Social Media:</h3>

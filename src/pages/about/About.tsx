@@ -34,10 +34,10 @@ export default function About() {
               <h4>Minor:</h4>
               <p>Computer Science</p>
             </div>
-            <div className="coding row">
+            {/* <div className="coding row">
               <h4>Coding Since:</h4>
               <p>2015</p>
-            </div>
+            </div> */}
             <div className="fav-movies row">
               <h4 className="title">Favorite Movies:</h4>
               <p>Die Hard,  LOTR: Fellowship,  Interstellar  <a href="https://boxd.it/7UK3B" target="_blank" title="My Letterboxd account">(Letterboxed)</a></p>
