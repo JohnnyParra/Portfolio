@@ -44,6 +44,7 @@ interface portfolioData {
   website: string | null,
   github: string | null,
   title: string,
+  alt: string,
   url: string,
   description: string,
   skills: string[],
@@ -62,6 +63,7 @@ const portfolioData: portfolioData[] = [
     website: 'https://johnnymparra-blog.netlify.app',
     github: 'https://github.com/JohnnyParra/Blog-Website-Client',
     title: "BLOG",
+    alt: "Blog website main page",
     url: "blog-application",
     description: `A Blog platform that allows users to create posts by adding a title, description, 
       category, body content, and image. Users can save posts as drafts for future editing and have the 
@@ -79,6 +81,7 @@ const portfolioData: portfolioData[] = [
     website: 'https://jp-jeopardy.netlify.app',
     github: 'https://github.com/JohnnyParra/Jeopardy-Client',
     title: "JEOPARDY",
+    alt: "Jeopardy main board",
     url: "Jeopardy",
     description: `This Jeopardy website lets users experience the iconic TV game show Jeopardy! with 
       actual questions from the show. The game includes classic features such as Double Jeopardy, Daily 
@@ -94,6 +97,7 @@ const portfolioData: portfolioData[] = [
     website: null,
     github: 'https://github.com/JohnnyParra/Qt-Paint',
     title: "PAINT APP",
+    alt: "Paint application",
     url: "Paint App",
     description: `A paint application, built with Qt version 6.7, allows users to paint on a canvas 
       with a variety of features. Users can change the size and color of the pen, save and open files, 
@@ -108,6 +112,7 @@ const portfolioData: portfolioData[] = [
     website: null,
     github: 'https://github.com/JohnnyParra/johnny-5-discord-bot',
     title: "DISCORD BOT",
+    alt: "Discord bot commands on discord",
     url: "Discord Bot",
     description: `A Discord bot that offers a range of commands, including but not limited to playing 
       blackjack, scheduling messages, and tracking the time users spend in voice channels.`,
@@ -121,6 +126,7 @@ const portfolioData: portfolioData[] = [
     website: 'https://jp-task-manager.netlify.app',
     github: 'https://github.com/JohnnyParra/Task-Manager-Client',
     title: "TASK MANAGER",
+    alt: "task manager main page",
     url: "Task Manager",
     description: `A task manager website, similar to Clockify, that enables users to schedule tasks 
       effortlessly and organize them according to their preferences.`,
@@ -134,6 +140,7 @@ const portfolioData: portfolioData[] = [
     website: null,
     github: null,
     title: "STUDY BUDDY BACKEND",
+    alt: "study buddy backend chatgpt prompt testing example",
     url: "Study Buddy",
     description: `Our backend, built with Express.js and a PostgreSQL database, is designed for the 
       frontend team to use. Additionally, it includes prompt testing using ChatGPT to help generate 
@@ -234,6 +241,7 @@ const portfolioData: portfolioData[] = [
     website: 'https://jp-quizzical.netlify.app',
     github: 'https://github.com/JohnnyParra/Quizzical-React-App',
     title: "QUIZZICAL",
+    alt: "Quizzical website quiz page",
     url: "Quizzical",
     description: `A simple quiz website allows users to select different categories and choose a 
       difficulty level for their quizzes.`,
@@ -247,6 +255,7 @@ const portfolioData: portfolioData[] = [
     website: null,
     github: null,
     title: "Graphical Design",
+    alt: "four images of logos I made",
     url: "Graphical Design",
     description: `This overview details my journey in using graphic design applications to create logos 
       and wallpapers.`,

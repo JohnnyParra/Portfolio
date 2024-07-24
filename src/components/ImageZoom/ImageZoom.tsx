@@ -8,6 +8,7 @@ interface propTypes {
   image: string
   scale: number
   Placeholder: string
+  alt: string
 }
 
 export default function ImageZoom(props: propTypes) {
@@ -92,7 +93,7 @@ export default function ImageZoom(props: propTypes) {
         className={`image ${isZoom ? "zoom-out" : "zoom-in"}`}
         style={styles}
         reference={ref}
-        alt=""
+        alt={props.alt}
         handleClick={handleClick}
         lowQualityImg={props.Placeholder}
         highQualityImg={props.image}

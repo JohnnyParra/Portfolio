@@ -12,6 +12,7 @@ interface latestWorkData {
   website: string | null,
   github: string | null,
   title: string,
+  alt: string,
   url: string,
   description: string,
   skills: string[],
@@ -30,6 +31,7 @@ const latestWorkData: latestWorkData[] = [
     github: 'https://github.com/JohnnyParra/Blog-Website-Client',
     id: 0,
     title: "BLOG",
+    alt: "Blog website home page",
     url: "blog-application",
     description: `A Blog platform that allows users to create posts by adding a title, description, 
       category, body content, and image. Users can save posts as drafts for future editing and have the 
@@ -47,6 +49,7 @@ const latestWorkData: latestWorkData[] = [
     github: 'https://github.com/JohnnyParra/Jeopardy-project',
     id: 1,
     title: "JEOPARDY",
+    alt: "Jeopardy main board",
     url: "Jeopardy",
     description: `This Jeopardy website lets users experience the iconic TV game show Jeopardy! with 
       actual questions from the show. The game includes classic features such as Double Jeopardy, Daily 
@@ -62,6 +65,7 @@ const latestWorkData: latestWorkData[] = [
     website: null,
     github: 'https://github.com/JohnnyParra/Qt-Paint',
     title: "PAINT APP",
+    alt: "Paint application",
     url: "Paint App",
     description: `A paint application, built with Qt version 6.7, allows users to paint on a canvas 
       with a variety of features. Users can change the size and color of the pen, save and open files, 

@@ -11,6 +11,7 @@ type LatestWorkTypes = {
   website: string | null;
   github: string | null;
   title: string;
+  alt: string;
   url: string;
   description: string;
   skills: string[];
@@ -27,7 +28,7 @@ export default function LatestWork(props: LatestWorkTypes) {
   return (
     <div className="latest-work-container">
       <div className="title">{props.title}</div>
-      <ImageZoom image={props.imgLocation} scale={2.5} Placeholder={props.Placeholder} />
+      <ImageZoom image={props.imgLocation} scale={2.5} Placeholder={props.Placeholder} alt={props.alt} />
       <div className="skills">
         <Skills skills={props.skills} />
       </div>

@@ -1,3 +1,5 @@
+import { Helmet } from "react-helmet";
+
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 import ContactForm from "../../components/ContactForm/ContactForm";
@@ -9,6 +11,11 @@ export default function Contact() {
 
   return (
     <main className="contact">
+      <Helmet>
+        <title>Contact | Johnny's Portfolio</title>
+        <meta name='description' content="This is the Contact page of Johnny's portfolio website" />
+        <meta name='content' content="contact, portfolio, johnny, parra, software, developer" />
+      </Helmet>
       <Header />
       <div className="content">
         <ContactForm />

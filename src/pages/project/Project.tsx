@@ -1,5 +1,6 @@
 import { ScrollRestoration, useParams } from 'react-router-dom';
 import { nanoid } from 'nanoid';
+import { Helmet } from 'react-helmet';
 
 import Header from "../../components/header/Header";
 import Footer from '../../components/footer/Footer';
@@ -17,9 +18,9 @@ export default function Project() {
     const sectionElements = body.map(section => {
       let type: string = section.type;
       if (type === 'title') {
-        return (<div key={nanoid()} className={type}>{section.content}</div>)
+        return (<div className={type}>{section.content}</div>)
       } else if (type === 'text') {
-        return (<div key={nanoid()} className={type}>{section.content}</div>)
+        return (<div className={type}>{section.content}</div>)
       } else if (type === 'images') {
         const contentArray: string[][] = section.content as string[][];
         const imageElements = contentArray.map(images => {
@@ -36,7 +37,7 @@ export default function Project() {
             />
           )
         });
-        return (<div key={nanoid()} className={type}>{imageElements}</div>)
+        return (<div className={type}>{imageElements}</div>)
       } else if (type === 'link') {
         return (
           <div className="link">
@@ -52,6 +53,11 @@ export default function Project() {
 
   return(
     <main className="project">
+      <Helmet>
+        <title>{data.title} | Johnny's Portfolio</title>
+        <meta name='description' content={`This is the ${data.title} project page of Johnny's portfolio website`} />
+        <meta name='content' content={`${data.title}, project, johnny, parra, software, developer`} />
+      </Helmet>
       <Header />
       <div className="content">
         <div className="main-title">{data.title}</div>

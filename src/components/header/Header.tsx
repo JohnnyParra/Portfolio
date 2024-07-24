@@ -1,4 +1,4 @@
-import { useNavigate, useLocation } from "react-router-dom";
+import { useNavigate, useLocation, Link } from "react-router-dom";
 
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
@@ -15,10 +15,10 @@ export default function Header() {
   const location = useLocation();
 
   const links = [
-    <a key={"home"} style={{borderBottom: location.pathname == '/' ? '1px solid white' : 'none'}} onClick={() => navigate("/")}>Home</a>,
-    <a key={"about"} style={{borderBottom: location.pathname == '/About' ? '1px solid white' : 'none'}} onClick={() => navigate("/About")}>About</a>,
-    <a key={"portfolio"} style={{borderBottom: location.pathname == '/Portfolio' ? '1px solid white' : 'none'}} onClick={() => navigate("/Portfolio")}>Portfolio</a>,
-    <a key={"contact"} style={{borderBottom: location.pathname == '/Contact' ? '1px solid white' : 'none'}} onClick={() => navigate("/Contact")}>Contact</a>
+    <Link key={"home"} className="header-link" style={{borderBottom: location.pathname == '/' ? '1px solid white' : 'none'}} to="/">Home</Link>,
+    <Link key={"about"} className="header-link" style={{borderBottom: location.pathname == '/About' ? '1px solid white' : 'none'}} to="/about">About</Link>,
+    <Link key={"portfolio"} className="header-link" style={{borderBottom: location.pathname == '/Portfolio' ? '1px solid white' : 'none'}} to="/portfolio">Portfolio</Link>,
+    <Link key={"contact"} className="header-link" style={{borderBottom: location.pathname == '/Contact' ? '1px solid white' : 'none'}} to="/contact">Contact</Link>
   ]
 
   return (

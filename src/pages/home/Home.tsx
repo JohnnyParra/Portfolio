@@ -1,5 +1,6 @@
 // import { useQuery } from "react-query";
 import { nanoid } from "nanoid";
+import { Helmet } from "react-helmet";
 
 import Header from "../../components/header/Header";
 import LatestWork from "../../components/latestWork/LatestWork";
@@ -34,6 +35,7 @@ export default function Home() {
           website={project.website}
           github={project.github}
           title={project.title}
+          alt={project.alt}
           url={project.url}
           description={project.description}
           skills={project.skills}
@@ -49,6 +51,11 @@ export default function Home() {
 
   return (
     <main className="home">
+      <Helmet>
+        <title>Home | Johnny's Portfolio</title>
+        <meta name='description' content="This is the Home page of Johnny's portfolio website" />
+        <meta name='content' content="home, portfolio, johnny, parra, software, developer" />
+      </Helmet>
       <Header />
       <div className="content">
         <div className="section">
@@ -56,7 +63,7 @@ export default function Home() {
             className="headshot"
             reference={undefined}
             style={undefined}
-            alt={undefined}
+            alt={"cartoon blend headshot of Johnny Parra"}
             handleClick={() => {}}
             lowQualityImg={"/headshot(LQIP).webp"}
             highQualityImg={"/headshot.webp"}

@@ -12,6 +12,7 @@ type ProjectCardTypes = {
   website: string | null;
   github: string | null;
   title: string;
+  alt: string,
   url: string;
   description: string;
   skills: string[];
@@ -29,7 +30,7 @@ export default function ProjectCards(props: ProjectCardTypes) {
     <div className="project-card-container">
       <div className="left">
         <div className="title">{props.title}</div>
-        <ImageZoom image={props.imgLocation} scale={2.5} Placeholder={props.Placeholder}/>
+        <ImageZoom image={props.imgLocation} scale={2.5} Placeholder={props.Placeholder} alt={props.alt}/>
       </div>
       <div className="right">
         <div className="skills">
@@ -39,7 +40,7 @@ export default function ProjectCards(props: ProjectCardTypes) {
         <div className='learn-more'>
           {props.website && <a href={props.website} target="_blank">Website</a>}
           {props.github && <a href={props.github} target="_blank">Github</a>}
-          {props.body && <span onClick={() => navigate(`/Project/${props.url}/${props.id}`)}>Learn more...</span>}
+          {props.body && <span onClick={() => navigate(`/project/${props.url}/${props.id}`)}>Learn more...</span>}
         </div>
       </div>
     </div>

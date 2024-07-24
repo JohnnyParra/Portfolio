@@ -1,3 +1,5 @@
+import { Helmet } from "react-helmet";
+
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 import BarChart from "../../components/BarChart/BarChart";
@@ -10,6 +12,11 @@ import { ScrollRestoration } from "react-router-dom";
 export default function About() {
   return (
     <main className="about">
+      <Helmet>
+        <title>About | Johnny's Portfolio</title>
+        <meta name='description' content="This is the About page of Johnny's portfolio website" />
+        <meta name='content' content="about, portfolio, johnny, parra, software, developer" />
+      </Helmet>
       <Header />
       <div className="content">
         <div className="top-container">
@@ -18,7 +25,7 @@ export default function About() {
               className="image"
               style={undefined}
               reference={undefined}
-              alt={undefined}
+              alt={"Johnny Parra leaning against a pony wall with los angeles in the background"}
               handleClick={() => {}}
               lowQualityImg="/fullbody(LQIP).webp"
               highQualityImg="/fullbody.webp"
