@@ -7,12 +7,6 @@ const Portfolio = lazy(() => import('./pages/portfolio/Portfolio'));
 const Contact = lazy(() => import('./pages/contact/Contact'));
 const Project = lazy(() => import('./pages/project/Project'));
 
-// import Home from "./pages/home/Home";
-// import About from "./pages/about/About";
-// import Portfolio from "./pages/portfolio/Portfolio";
-// import Contact from "./pages/contact/Contact";
-// import Project from "./pages/project/Project";
-
 import "./App.css";
 
 const router = createBrowserRouter([

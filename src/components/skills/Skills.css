@@ -16,7 +16,7 @@
     flex-wrap: wrap; 
 
     & .skill {
-      background: rgb(121, 121, 250);
+      background: var(--primary-color);
       border: 1px solid black;
       border-radius: 5px;
       box-shadow: 1px 2px 3px rgb(30, 30, 30);
@@ -30,7 +30,7 @@
       border: 1px solid black;
       border-radius: 25px;
       box-shadow: 1px 1px 2px black;
-      color: rgb(5, 101, 160);
+      color: var(--primary-color);
       cursor: pointer;
       font-size: 15px;
       font-weight: 600;

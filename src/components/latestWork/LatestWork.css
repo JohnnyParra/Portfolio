@@ -24,7 +24,7 @@
     }
     & .learn-more {
         align-content: flex-end;
-        color: blue;
+        color: var(--primary-color);
         flex-grow: 1;
         font-size: 13px;
         padding: 5px 20px 5px 0px;
@@ -32,13 +32,13 @@
         width: 100%;
         
         & a {
-            color: rgb(121, 121, 250);
+            color: var(--primary-color);
             font-size: 14px;
             margin: 10px;
         }
 
         & span {
-            color: rgb(121, 121, 250);
+            color: var(--primary-color);
             cursor: pointer;
             font-size: 14px;
         }

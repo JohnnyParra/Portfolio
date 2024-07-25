@@ -31,6 +31,7 @@ export default function Project() {
               style={undefined}
               reference={undefined}
               alt={undefined}
+              loading={"lazy"}
               handleClick={() => {}}
               lowQualityImg={images[1] || images[1]}
               highQualityImg={images[0]}

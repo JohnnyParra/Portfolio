@@ -5,6 +5,7 @@ interface BlurImage {
   className: string;
   style: CSSProperties | undefined;
   reference: RefObject<HTMLImageElement> | undefined;
+  loading: "eager" | "lazy";
   alt: string | undefined;
   handleClick: Function;
   lowQualityImg: string;
@@ -28,7 +29,7 @@ export default function BlurImage(props: BlurImage) {
       src={src}
       alt={props?.alt}
       onClick={(event) => props.handleClick(event)}
-      loading="lazy"
+      loading={props.loading}
     />
   )
 }

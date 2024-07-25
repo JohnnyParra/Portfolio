@@ -55,6 +55,8 @@ export default function Home() {
         <title>Home | Johnny's Portfolio</title>
         <meta name='description' content="This is the Home page of Johnny's portfolio website" />
         <meta name='content' content="home, portfolio, johnny, parra, software, developer" />
+        <link rel="preload" href="/headshot.webp" as="image" />
+        <link rel="preload" href="/background.webp" as="image" />
       </Helmet>
       <Header />
       <div className="content">
@@ -64,6 +66,7 @@ export default function Home() {
             reference={undefined}
             style={undefined}
             alt={"cartoon blend headshot of Johnny Parra"}
+            loading={"eager"}
             handleClick={() => {}}
             lowQualityImg={"/headshot(LQIP).webp"}
             highQualityImg={"/headshot.webp"}

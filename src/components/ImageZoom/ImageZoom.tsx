@@ -93,6 +93,7 @@ export default function ImageZoom(props: propTypes) {
         className={`image ${isZoom ? "zoom-out" : "zoom-in"}`}
         style={styles}
         reference={ref}
+        loading={"lazy"}
         alt={props.alt}
         handleClick={handleClick}
         lowQualityImg={props.Placeholder}

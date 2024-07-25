@@ -11,6 +11,12 @@ html,body {
     "Helvetica", "Arial", sans-serif !important;
 }
 
+#root {
+  --primary-color: #680BF4;
+  --primary-color-hover: #4b06b5;
+  --secondary-color: #9a89ff;
+}
+
 .content {
   flex: 1;
 }

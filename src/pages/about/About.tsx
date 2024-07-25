@@ -16,6 +16,7 @@ export default function About() {
         <title>About | Johnny's Portfolio</title>
         <meta name='description' content="This is the About page of Johnny's portfolio website" />
         <meta name='content' content="about, portfolio, johnny, parra, software, developer" />
+        <link rel="preload" href="/fullbody.webp" as="image" />
       </Helmet>
       <Header />
       <div className="content">
@@ -25,6 +26,7 @@ export default function About() {
               className="image"
               style={undefined}
               reference={undefined}
+              loading={"eager"}
               alt={"Johnny Parra leaning against a pony wall with los angeles in the background"}
               handleClick={() => {}}
               lowQualityImg="/fullbody(LQIP).webp"

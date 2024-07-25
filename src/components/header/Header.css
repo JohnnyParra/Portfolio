@@ -29,7 +29,7 @@ header {
       text-decoration: none;
       
       &:hover {
-        color: rgb(121, 121, 250);
+        color: var(--secondary-color);
         cursor: pointer;
       }
     }
@@ -44,7 +44,7 @@ header {
         text-decoration: none;
 
         &:hover {
-          color: rgb(121, 121, 250);
+          color: var(--secondary-color);
           cursor: pointer;
         }
       }
@@ -61,13 +61,13 @@ header {
       & .linkedin {
 
         &:hover {
-          filter: invert(51%) sepia(35%) saturate(922%) hue-rotate(202deg) brightness(94%) contrast(109%);
+          filter: brightness(0) saturate(100%) invert(46%) sepia(86%) saturate(1207%) hue-rotate(217deg) brightness(109%) contrast(104%);
         }
       }
       & .github {
 
         &:hover {
-          filter: invert(51%) sepia(35%) saturate(922%) hue-rotate(202deg) brightness(94%) contrast(109%);
+          filter: brightness(0) saturate(100%) invert(46%) sepia(86%) saturate(1207%) hue-rotate(217deg) brightness(109%) contrast(104%);
         }
       }
     }

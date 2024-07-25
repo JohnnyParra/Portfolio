@@ -18,7 +18,7 @@ Footer {
       text-decoration: none;
 
       &:hover {
-        color: rgb(121, 121, 250);
+        color: var(--secondary-color);
         cursor: pointer;
       }
     }
@@ -30,7 +30,7 @@ Footer {
       font-size: 12px;
 
       &:hover {
-        color: rgb(121, 121, 250);
+        color: var(--secondary-color);
         cursor: pointer;
       }
     }

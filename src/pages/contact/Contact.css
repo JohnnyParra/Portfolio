@@ -41,11 +41,14 @@
       }
       & a {
         border-right: solid 1.5px black;
-        color: rgb(121, 121, 250);
+        color: var(--primary-color);
         font-size: 15px;
         padding: 0px 5px 0px 5px;
         text-decoration: none;
 
+        &:hover {
+          color: var(--primary-color-hover);
+        }
         &:first-child {
           padding: 0px 5px 0px 0px;
         }
