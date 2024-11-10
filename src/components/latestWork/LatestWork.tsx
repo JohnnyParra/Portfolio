@@ -1,5 +1,6 @@
+import { useNavigate  } from "react-router-dom";
+
 import Skills from "../skills/Skills";
-import { useNavigate } from "react-router-dom";
 import ImageZoom from "../ImageZoom/ImageZoom";
 import "./LatestWork.css";
 
@@ -10,9 +11,15 @@ type LatestWorkTypes = {
   website: string | null;
   github: string | null;
   title: string;
+  alt: string;
   url: string;
   description: string;
   skills: string[];
+  body: {
+    type: 'text' | 'images' | 'title' | 'link';
+    content: string | string[][];
+    url?: string;
+  }[][] | null;
 }; // from Home.tsx
 
 export default function LatestWork(props: LatestWorkTypes) {
@@ -21,7 +28,7 @@ export default function LatestWork(props: LatestWorkTypes) {
   return (
     <div className="latest-work-container">
       <div className="title">{props.title}</div>
-      <ImageZoom image={props.imgLocation} scale={2.5} Placeholder={props.Placeholder} />
+      <ImageZoom image={props.imgLocation} scale={2.5} Placeholder={props.Placeholder} alt={props.alt} />
       <div className="skills">
         <Skills skills={props.skills} />
       </div>
@@ -29,7 +36,7 @@ export default function LatestWork(props: LatestWorkTypes) {
       <div className='learn-more'>
         {props.website && <a href={props.website} target="_blank">Website</a>}
         {props.github && <a href={props.github} target="_blank">Github</a>}
-        {/* <span onClick={() => navigate(`/Project/${props.url}`)}>Learn more...</span> */}
+        {props.body && <span onClick={() => navigate(`/Project/${props.url}`)}>Learn more...</span>}
       </div>
     </div>
   );

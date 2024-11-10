@@ -2,7 +2,7 @@ html,body {
   background-color: rgb(255, 255, 255);
   margin: 0;
   padding: 0;
-  scroll-behavior: smooth;
+  scroll-behavior: auto;
 }
 
 * {
@@ -11,14 +11,20 @@ html,body {
     "Helvetica", "Arial", sans-serif !important;
 }
 
+#root {
+  --primary-color: #680BF4;
+  --primary-color-hover: #4b06b5;
+  --secondary-color: #9a89ff;
+}
+
 .content {
   flex: 1;
 }
 
 @font-face {
   font-family: robotoSlab;
-  src: url("/RobotoSlab.woff2") format("woff2");
   font-weight: 400;
+  src: url("/RobotoSlab.woff2") format("woff2");
 }
 @font-face {
   font-family: animeace;

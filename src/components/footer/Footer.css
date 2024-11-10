@@ -4,18 +4,21 @@ Footer {
   color: white;
   display: flex;
   flex-direction: column;
-  
   justify-self: flex-end;
+  width: 100%;
+  
 
   & .row {
     margin: 5px;
      
-    & a {
+    & .footer-link {
+      color: white;
       font-size: 14px;
       margin: 0px 5px;
+      text-decoration: none;
 
       &:hover {
-        color: rgb(121, 121, 250);
+        color: var(--secondary-color);
         cursor: pointer;
       }
     }
@@ -23,11 +26,11 @@ Footer {
   & .totop {
     margin: 5px;
 
-    a {
+    & span {
       font-size: 12px;
 
       &:hover {
-        color: rgb(121, 121, 250);
+        color: var(--secondary-color);
         cursor: pointer;
       }
     }
@@ -41,8 +44,13 @@ Footer {
   & p {
     align-items: center;
     display: flex;
-    font-size: 14px;
+    font-size: 12px;
     justify-content: center;
     text-align: center;
+  }
+  & h4 {
+    font-size: 10px;
+    font-weight: 200;
+    margin: 0px;
   }
 }

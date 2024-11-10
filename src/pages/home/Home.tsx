@@ -1,5 +1,6 @@
 // import { useQuery } from "react-query";
 import { nanoid } from "nanoid";
+import { Helmet } from "react-helmet";
 
 import Header from "../../components/header/Header";
 import LatestWork from "../../components/latestWork/LatestWork";
@@ -8,6 +9,7 @@ import ContactForm from "../../components/ContactForm/ContactForm";
 import Footer from "../../components/footer/Footer";
 import BlurImage from "../../components/BlurImage/BlurImage";
 import "./Home.css";
+import { ScrollRestoration } from "react-router-dom";
 
 export default function Home() {
   // const fetchUsers = async () => {
@@ -33,9 +35,11 @@ export default function Home() {
           website={project.website}
           github={project.github}
           title={project.title}
+          alt={project.alt}
           url={project.url}
           description={project.description}
           skills={project.skills}
+          body={project.body}
         />
       </div>
     );
@@ -47,6 +51,13 @@ export default function Home() {
 
   return (
     <main className="home">
+      <Helmet>
+        <title>Home | Johnny's Portfolio</title>
+        <meta name='description' content="This is the Home page of Johnny's portfolio website" />
+        <meta name='content' content="home, portfolio, johnny, parra, software, developer" />
+        <link rel="preload" href="/headshot.webp" as="image" />
+        <link rel="preload" href="/background.webp" as="image" />
+      </Helmet>
       <Header />
       <div className="content">
         <div className="section">
@@ -54,7 +65,8 @@ export default function Home() {
             className="headshot"
             reference={undefined}
             style={undefined}
-            alt={undefined}
+            alt={"cartoon blend headshot of Johnny Parra"}
+            loading={"eager"}
             handleClick={() => {}}
             lowQualityImg={"/headshot(LQIP).webp"}
             highQualityImg={"/headshot.webp"}
@@ -74,6 +86,7 @@ export default function Home() {
         </div>
       </div>
       <Footer />
+      <ScrollRestoration />
     </main>
   );
 }

@@ -28,7 +28,7 @@ export default function BarChart() {
       { skill: 'Qt', years: 0.1 }
     ],
     title: {
-      text: "Years of Experience Since Graduation"
+      text: "Years of Experience Using"
     },
     series: [
       {
@@ -62,7 +62,7 @@ export default function BarChart() {
 
   return (
     <div className="bar-chart-container">
-      <div className="bar-chart">
+      <div className="bar-chart" >
         <AgChartsReact options={chartOptions} />
       </div>
     </div>

@@ -1,3 +1,5 @@
+import { Helmet } from "react-helmet";
+
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 import BarChart from "../../components/BarChart/BarChart";
@@ -5,10 +7,17 @@ import BarChart from "../../components/BarChart/BarChart";
 import BlurImage from "../../components/BlurImage/BlurImage";
 
 import "./About.css"
+import { ScrollRestoration } from "react-router-dom";
 
 export default function About() {
   return (
     <main className="about">
+      <Helmet>
+        <title>About | Johnny's Portfolio</title>
+        <meta name='description' content="This is the About page of Johnny's portfolio website" />
+        <meta name='content' content="about, portfolio, johnny, parra, software, developer" />
+        <link rel="preload" href="/fullbody.webp" as="image" />
+      </Helmet>
       <Header />
       <div className="content">
         <div className="top-container">
@@ -17,7 +26,8 @@ export default function About() {
               className="image"
               style={undefined}
               reference={undefined}
-              alt={undefined}
+              loading={"eager"}
+              alt={"Johnny Parra leaning against a pony wall with los angeles in the background"}
               handleClick={() => {}}
               lowQualityImg="/fullbody(LQIP).webp"
               highQualityImg="/fullbody.webp"
@@ -33,27 +43,28 @@ export default function About() {
               <h4>Minor:</h4>
               <p>Computer Science</p>
             </div>
-            <div className="coding row">
+            {/* <div className="coding row">
               <h4>Coding Since:</h4>
               <p>2015</p>
-            </div>
+            </div> */}
             <div className="fav-movies row">
               <h4 className="title">Favorite Movies:</h4>
-              <p>Die Hard,  LOTR: Fellowship,  Interstellar  <a href="https://boxd.it/7UK3B" target="_blank" title="My Letterboxd account">( Letterboxed )</a></p>
+              <p>Die Hard,  LOTR: Fellowship,  Interstellar  <a href="https://boxd.it/7UK3B" target="_blank" title="My Letterboxd account">(Letterboxed)</a></p>
             </div>
             <div className="fav-games row">
               <h4 className="title">Favorite Games:</h4>
               <p>The Witcher 3, Arkham City, Mass Effect 2, Baldur's Gate 3</p>
             </div>
             <div className="summary row">
-              <h4>Summary:</h4>
-              <p>It was my junior year when I started to use phyton, reading data from files and using matplotlib to visualize it, to help with my research in physics and take more advanced Computer Science courses where I started to contemplate my future.  Than an unforeseen global pandemic happened during my last semester and I graduated during a time where the world was on hold.  This gave me time to think and choose whether I wanted to continue my education in Physics or pursue a career as a Software Developer. I chose the latter and enrolled in a web development bootcamp.  That turned into an internship and when that ended I started working on my own projects and building up my portfolio</p>
+              <h4>About Me:</h4>
+              <p>I'm all about building, fixing, and helping out—whether it's with programming, computers, or even cars. I love improving my skills and learning new things. I'm mostly a self-taught programmer and pretty good at solving problems on my own, thanks to my Google skills and knowing how to dig into documentation. So far, I've always managed to find solutions to the challenges I face in my projects, though I know there's always more to learn. Plus, I get along easily with others and can communicate problems efficiently, making teamwork a breeze.</p>
             </div>
           </div>
         </div>
         <BarChart />
       </div>
       <Footer />
+      <ScrollRestoration />
     </main>
   );
 }

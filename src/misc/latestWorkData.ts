@@ -7,17 +7,23 @@ import PaintPNG from '/Paint.png';
 
 interface latestWorkData {
   id: number,
-  imageLocation: string,
+  imgLocation: string,
   Placeholder: string,
   website: string | null,
   github: string | null,
   title: string,
+  alt: string,
   url: string,
   description: string,
-  skills: string[]
+  skills: string[],
+  body: {
+    type: 'text' | 'images' | 'title' | 'link';
+    content: string | string[][];
+    url?: string;
+  }[][] | null;
 }
 
-const latestWorkData = [
+const latestWorkData: latestWorkData[] = [
   {
     imgLocation: blogPNG,
     Placeholder: blogLQIP,
@@ -25,9 +31,16 @@ const latestWorkData = [
     github: 'https://github.com/JohnnyParra/Blog-Website-Client',
     id: 0,
     title: "BLOG",
+    alt: "Blog website home page",
     url: "blog-application",
-    description: "Blog website where users can do the following: create posts, save posts to drafts, delete/edit owned posts, and comment/like other users posts/comments.  Creating a posts consists of adding a(n): title, description, category, body content, and image. Users can then find content by searching for it or by choosing a category(not necessary) and/or sorting by most liked or recent posts.",
-    skills: ["React", "JavaScript", "Express", "MySQL", "HTML/CSS"],
+    description: `A Blog platform that allows users to create posts by adding a title, description, 
+      category, body content, and image. Users can save posts as drafts for future editing and have the 
+      ability to edit or delete their own posts. Interaction is encouraged through commenting on and 
+      liking posts and comments from other users. To enhance content discovery, users can search for 
+      specific posts, browse through categories, and sort posts by the most liked or most 
+      recent.`,
+    skills: ["React", "JavaScript", "Express", "MySQL", "HTML/CSS", "Azure Database"],
+    body: null,
   },
   {
     imgLocation: jeopardyPNG,
@@ -36,9 +49,14 @@ const latestWorkData = [
     github: 'https://github.com/JohnnyParra/Jeopardy-project',
     id: 1,
     title: "JEOPARDY",
+    alt: "Jeopardy main board",
     url: "Jeopardy",
-    description: "Jeopardy website where users can play the famous tv game show game Jeopardy! using questions from the actual show.  Includes double jeopardy, daily double, and final jeopardy.  Used the Levenshtein distance algorithm along with custom parsing to test user answers similarity to the correct answer.",
-    skills: ["React", "JavaScript", "Express", "MySQL", "HTML/CSS"],
+    description: `This Jeopardy website lets users experience the iconic TV game show Jeopardy! with 
+      actual questions from the show. The game includes classic features such as Double Jeopardy, Daily 
+      Double, and Final Jeopardy. To evaluate user answers, the site employs the Levenshtein distance 
+      algorithm combined with custom parsing to measure similarity to the correct answers.`,
+    skills: ["React", "JavaScript", "Express", "MySQL", "HTML/CSS", "AWS RDS"],
+    body: null,
   },
   {
     id: 2,
@@ -47,9 +65,13 @@ const latestWorkData = [
     website: null,
     github: 'https://github.com/JohnnyParra/Qt-Paint',
     title: "PAINT APP",
+    alt: "Paint application",
     url: "Paint App",
-    description: "Paint application using Qt version 6.7 where users can paint on a canvas with the following abilities: change the size and color of the pen, save and open files, and clearing the canvas.",
+    description: `A paint application, built with Qt version 6.7, allows users to paint on a canvas 
+      with a variety of features. Users can change the size and color of the pen, save and open files, 
+      and clear the canvas for a fresh start.`,
     skills: ["C++", "Qt"],
+    body: null,
   },
 ];
 export default latestWorkData;

@@ -4,27 +4,26 @@
   height: 100vh;
 
   & .section {
-    /* height: 800px; */
-    width: 100%;
-    background-image: url("/background.webp");
-    background-repeat: no-repeat;
-    background-position: right;
+    align-items: center;
     background-color: white;
+    background-image: url("/background.webp");
+    background-position: right;
+    background-repeat: no-repeat;
     background-size: cover;
     display: flex;
-    align-items: center;
     justify-content: space-around;
+    width: 100%;
     
     & .headshot {
       height: 671px;
       padding: 25px 0px 25px 0px;
     }
     & .test {
+      align-items: center;
       display: flex;
       flex-direction: column;
-      align-items: center;
-      text-align: center;
       justify-content: center;
+      text-align: center;
 
       & .title {
         font-family: animeace !important;
@@ -41,25 +40,25 @@
   & .latest-work {
     
     & .latest-work-title {
+      align-items: center;
       display: flex;
       font-size: 20px;
-      align-items: center;
       justify-content: center;
       margin-top: 10px;
 
       &::before, 
       &::after {
+        border-bottom: 1px solid black;
         content: "";
         flex: 1;
-        border-bottom: 1px solid black;
         margin: 0px 30px 0px 30px;
       }
     }
     & .latest-work-cards {
       display: flex;
-      width: 100%;
-      justify-content: center;
       flex-wrap: wrap; 
+      justify-content: center;
+      width: 100%;
 
       & .container {
         display: flex;
@@ -69,8 +68,8 @@
   }
   & .contact-container {
     background: black;
-    padding: 20px;
     margin-top: 20px;
+    padding: 20px;
   }
 }
 
@@ -81,8 +80,8 @@
       flex-direction: column;
 
       & .headshot {
-        height: 500px;
         flex-shrink: 2;
+        height: 500px;
       }
       & .test {
 
